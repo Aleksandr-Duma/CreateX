@@ -66,48 +66,18 @@ button{
 }
 
 .select{
-	// width: 100%;
-	// height: 46px;
-	// font-size: 16px;
-	// font-weight: 500;
-	// line-height: 20px;
 	position: relative;
 	display: block;
-	// text-align-last: left;
-	// background-color: #F0F0F0;
-	// border: 1px solid #8B8B8B;
-	// border-radius: 5px;
-	// padding: 13px 35px 13px 20px;
 }
 
 .select:focus, .active{
 	outline: none;
-	// box-shadow: 0px 0px 5px #A6D8FF;
-}
-
-.select::after{
-	// content:"";
-	// width: 20px;
-	// height: 20px;
-	// background-image: url(arrow-down.svg);
-	// background-repeat: no-repeat;
-	// background-position: center center;
-	// position: absolute;
-	// top: 50%;
-	// right: 20px;
-	// transform: translateY(-50%);
-	/*Снимаем активный клик со стрелки*/
-	// pointer-events: none;
 }
 
 .select-list{
 	width: 100%;
 	list-style-type: none;
-	// background-color: #F0F0F0;
-	// box-shadow: 0px 4px 6px rgba(139, 139, 139, .6);
-	// border-radius: 5px;
 	position: absolute;
-	// top: 52px;
 	top: 100%;
 	left: 0;
 	overflow: hidden;
@@ -119,28 +89,6 @@ button{
 
 .select-list.visible{
 	display: block;
-}
-
-.select-list__item{
-	// border: 1px solid #8B8B8B;
-	// border-bottom: 0;
-	// cursor: pointer;
-	// padding: 0;
-	// padding: 13px 20px;
-	// margin: 0;
-}
-
-.select-list__item:first-child{
-	// border-radius: 5px 5px 0 0;
-}
-
-.select-list__item:last-child{
-	// border-radius: 0 0 5px 5px;
-	// border-bottom: 1px solid #8B8B8B;
-}
-
-.select-list__item:hover{
-	// background-color: #DEDEDE;
 }
 
 .input-hidden{

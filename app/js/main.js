@@ -38,6 +38,14 @@ document.querySelectorAll('.select-wrap').forEach(function(selectWrap){
 	});
 });
 
+/*-----------------------header-sale-----------------------*/
+
+const headerSale = document.querySelector('.header__sale');
+
+setTimeout(function() {
+	headerSale.classList.add('show');
+}, 3000);
+
 
 
 
