@@ -1,0 +1,179 @@
+/*-------------------footer------------------*/
+.footer{
+	background-color: $main-black;
+	margin-top: auto;
+
+	&__container{
+		display: flex;
+		justify-content: space-between;
+		padding: 65px 35px 30px 6px;
+	}
+
+	&__column{
+
+		&-title{
+			text-transform: uppercase;
+			font-weight: 700;
+			font-size: 16px;
+			line-height: 1.2;
+			letter-spacing: 1px;
+			color: #fff;
+			margin: 0 0 18px 0;
+		}
+
+		&-list{
+			list-style: none;
+			padding: 0;
+			margin: 0;
+		}
+
+		&-list-item{
+			margin-bottom: 11px;
+		}
+
+		&-list-link{
+			font-size: 16px;
+			line-height: 1.2;
+			color: $grey-text;
+
+			&:hover{
+				text-decoration: underline;
+			}
+		}
+
+		&-contacts{
+			font-size: 16px;
+			line-height: 1.2;
+			color: #fff;
+			margin: 0 0 5px 0;
+		}
+
+		&-social{
+			display: flex;
+			align-items: center;
+			padding: 15px 0 0 0;
+
+			&-link{
+				display: inline-block;
+				width: 32px;
+				height: 32px;
+				border-radius: 4px;
+				background-color: #393C45;
+				background-repeat: no-repeat;
+				background-position: center;
+				transition: background .2s ease; 
+				margin: 0 12px 0 0; 
+			}
+
+			&-link.facebook{
+				background-image: url(../img/icons/facebook-icon-white.svg);
+
+				&:hover{
+					background-image: url(../img/icons/facebook-icon-green.svg);
+				}
+			}
+
+			&-link.instagram{
+				background-image: url(../img/icons/instagram-icon-white.svg);
+
+				&:hover{
+					background-image: url(../img/icons/instagram-icon-green.svg);
+				}
+			}
+
+			&-link.twitter{
+				background-image: url(../img/icons/twitter-icon-white.svg);
+
+				&:hover{
+					background-image: url(../img/icons/twitter-icon-green.svg);
+				}
+			}
+
+			&-link.youtube{
+				background-image: url(../img/icons/youtube-icon-white.svg);
+
+				&:hover{
+					background-image: url(../img/icons/youtube-icon-green.svg);
+				}
+			}
+
+			&-link.pinterest{
+				background-image: url(../img/icons/pinterest-icon-white.svg);
+
+				&:hover{
+					background-image: url(../img/icons/pinterest-icon-green.svg);
+				}
+			}
+		}
+
+		&-app{
+			display: flex;
+			align-items: center;
+			padding: 8px 0 0 0;
+
+			&-link{
+				width: 162px;
+				height: 48px;
+				border-radius: 4px;
+				background-repeat: no-repeat;
+				background-position: center;
+				background-size: cover;
+				transition: opacity .2s ease;
+
+				&:hover{
+					opacity: 0.6;
+				}
+			}
+
+			&-link.apple{
+				background-image: url(../img/icons/app-store.svg);
+				margin-right: 20px;
+			}
+
+			&-link.google{
+				background-image: url(../img/icons/google-play.svg);
+			}
+		}
+	}
+
+	&__copy{
+		border-top: 1px solid #40424C;
+		
+		&-container{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 20px 35px 30px 6px;
+		}
+
+		&-description{
+			display: flex;
+			align-items: center;
+		}
+
+		&-text{
+			font-size: 12px;
+			line-height: 1.5;
+			color: #fff;
+		}
+
+		&-icon{
+			width: 16px;
+			height: 16px;
+			margin: 0 4px 0 4px;
+		}
+
+		&-link-top{
+			display: block;
+			font-weight: 700;
+			font-size: 16px;
+			line-height: 1.6;
+			color: $grey-text;
+			transition: color .2s ease;
+
+			&:hover{
+				color: #fff;
+			}
+		}
+	}
+}
