@@ -52,4 +52,19 @@ setTimeout(function() {
 
 $(function(){
 
+	$('.banner-slider').slick({
+		dots: true,
+		autoplay: true
+		// prevArrow: '.about-slider__nav-left',
+		// nextArrow: '.about-slider__nav-right'
+	});
+	// Add 0 in buttons slick-dots
+	const dots = document.querySelectorAll('.slick-dots li button');
+
+	dots.forEach(function(item, i) {
+		item.innerHTML = `0${i + 1}`;
+	});
+
 });
+
+

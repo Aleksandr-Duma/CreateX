@@ -1,6 +1,6 @@
 /*-------------------header------------------*/
 .header{
-
+	
 }
 
 .header__top{
@@ -157,7 +157,9 @@
 }
 
 .header__main{
+	min-height: 84px;
 	background-color: #fff;
+	border-bottom: 1px solid #DADBDD;
 	position: relative;
 	z-index: 10;
 	padding: 20px 0 20px 0;
@@ -323,15 +325,17 @@
 }
 
 .header__sale{
+	width: 100%;
 	min-height: 34px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	background-color: $main-green;
-	position: relative;
+	position: absolute;
+	left: 0;
 	z-index: 9;
 	transition: transform .5s linear;
-	transform: translateY(-100%);
+	transform: translateY(-101%);
 
 	&-text{
 		font-weight: 900;
