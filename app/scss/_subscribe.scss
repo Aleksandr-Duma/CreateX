@@ -1,0 +1,144 @@
+/*------------------subscribe----------------*/
+.subscribe{
+	background-color: $light-grey-bg;
+
+	&__container{
+		background-image: url(../img/bg/subscribe-block-bg.png);
+		background-repeat: no-repeat;
+		background-position: 95.1% center;
+		background-size: 35%;
+		padding: 105px 0 100px 0;
+	}
+
+	&__title{
+		font-weight: 900;
+		font-size: 46px;
+		line-height: 1.2;
+		letter-spacing: 0.4px;
+		margin: 0 0 25px 0;
+	}
+
+	&__subtitle{
+		display: inline-block;
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 150%;
+		color: $grey-text;
+		margin: 0 0 30px 0;
+	}
+
+	&__text{
+		display: inline-block;
+		color: $dark-grey;
+		margin-bottom: 10px;
+	}
+
+	&__input-wrap{
+		width: 495px;
+		height: 52px;
+		position: relative;
+		margin-bottom: 30px;
+	}
+
+	&__input{
+		width: 100%;
+		height: 100%;
+		font-size: 16px;
+		line-height: 1;
+		color: $grey-text;
+		border-radius: 4px 0 0 4px;
+		border: 1px solid #D7DADD;
+		outline: none;
+		padding: 0 160px 0 15px;
+
+		&::placeholder{
+			font-size: 16px;
+			line-height: 1;
+			color: $grey-text;
+		}
+	}
+
+	&__submit{
+		height: 52px;
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 52px;
+		letter-spacing: 0.5px;
+		color: #fff;
+		border-radius: 0 4px 4px 0;
+		background-color: $main-green;
+		position: absolute;
+		top: 0;
+		right: 0;
+		padding: 0 40px;   
+	}
+}
+
+/*---custom-radio-subscribe---*/
+.subscribe-category{
+	display: flex;
+	margin-bottom: 36px;
+}
+
+.subscribe-category__button{
+	display: block;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1;
+	color: $dark-grey;
+	border-radius: 4px;
+	border: 1px solid $main-green;
+	padding: 8px 16px 8px 14px;
+	transition: background .2s ease;
+	margin-right: 13px;
+
+	&:hover{
+		color: #fff;
+		background-color: $main-green;
+	}
+}
+
+.subscribe-category__radio{
+	position: absolute;
+  	z-index: -1;
+  	opacity: 0;
+}
+
+.subscribe-category__radio:checked + .subscribe-category__button{
+	color: #fff;
+	background-color: $main-green;
+}
+/*---custom-radio-subscribe-end--*/
+
+/*---custom-checkbox-subscribe---*/
+.subscribe__checkbox {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+}
+
+.subscribe__checkbox-label{
+	font-size: 16px;
+	line-height: 1;
+	display: inline-flex;
+	align-items: center;
+	user-select: none;
+}
+
+.subscribe__checkbox-label::before {
+	content: '';
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	border-radius: 3px;
+	border: 1px solid $main-green;
+	margin-right: 13px;
+}
+
+.subscribe__checkbox:checked + .subscribe__checkbox-label::before {
+	background-color: $main-green;
+	background-image: url(../img/icons/subscribe-check-icon-white.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+/*---custom-checkbox-subscribe-end---*/
