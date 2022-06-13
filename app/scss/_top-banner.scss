@@ -22,7 +22,7 @@
 
 	.slick-prev{
 		background-image: url(../img/icons/slider-banner-arrow-left.svg);
-		left: 20px;
+		left: 25px;
 
 		&:hover{
 			background-color: $main-green;
@@ -32,7 +32,7 @@
 
 	.slick-next{
 		background-image: url(../img/icons/slider-banner-arrow-right.svg);
-		right: 20px;
+		right: 25px;
 
 		&:hover{
 			background-color: $main-green;

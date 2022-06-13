@@ -1,0 +1,46 @@
+/*---------------top-categories--------------*/
+.top-categories{
+	min-height: 300px;
+	display: flex;
+	justify-content: center;
+	padding-bottom: 100px;
+
+	&__content {
+		display: flex;
+		justify-content: space-between;
+		position: relative;
+		z-index: 10;
+		margin-top: -60px;
+	}
+
+	&__card {
+		margin: 0 15px;
+
+		&-picture {
+			width: 390px;
+			height: 390px;
+			border-radius: 4px;
+			background-color: $main-black;
+			overflow: hidden;
+		}
+
+		&-img {
+			width: 100%;
+			object-fit: cover;
+			transition: all .3s ease;
+
+			&:hover{
+				transform: scale(1.1);
+				opacity: 0.8;
+			}
+		}
+
+		&-description {
+			font-weight: 700;
+			font-size: 20px;
+			line-height: 1.2;
+			text-align: center;
+			padding: 20px 0;
+		}
+	}
+}
