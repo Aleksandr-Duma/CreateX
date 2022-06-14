@@ -1,0 +1,76 @@
+/*----------------product-card---------------*/
+.product-card{
+	width: 285px;
+	height: 413px;
+	position: relative;
+
+	margin-left: 100px;
+	margin-bottom: 50px; 
+
+	&__picture{
+		display: block;
+		width: 100%;
+		height: 320px;
+		border-radius: 4px;
+		position: relative;
+		overflow: hidden;
+	}
+
+	&__raiting{
+		width: 78px;
+		height: 14px;
+		background-image: url(../img/icons/card-rating-5.svg);
+		background-repeat: no-repeat;
+		background-position: center;
+		position: absolute;
+		top: 16px;
+		right: 16px;
+	}
+
+	&__img{
+		object-fit: cover;
+	}
+
+	&__favorite{
+		width: 32px;
+		height: 32px;
+		border-radius: 50%;
+		background-color: #fff;
+		background-image: url(../img/icons/card-heart-black.svg);
+		background-repeat: no-repeat;
+		background-position: center;
+		position: absolute;
+		right: 16px;
+		bottom: 16px;
+		z-index: 20;
+
+		&.active{
+			background-color: $accent-red;
+			background-image: url(../img/icons/card-heart-white.svg);
+		}
+	}
+
+	&__description{
+		padding: 21px 16px 15px 16px;
+	}
+
+	&__title{
+		display: inline-block;
+		font-size: 18px;
+		line-height: 1.2;
+		color: $dark-grey;
+		margin: 0 0 11px 0;
+
+		&:hover{
+			text-decoration: underline;
+		}
+	}
+
+	&__price{
+		font-weight: 700;
+		font-size: 20px;
+		line-height: 1.2;
+		color: $main-black;
+		margin: 0;
+	}
+}

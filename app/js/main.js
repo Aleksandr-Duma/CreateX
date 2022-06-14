@@ -46,6 +46,17 @@ setTimeout(function() {
 	headerSale.classList.add('show');
 }, 3000);
 
+/*----------------------card-favorite----------------------*/
+
+const favoriteCircle = document.querySelectorAll('.product-card__favorite');
+
+	favoriteCircle.forEach(item => {
+		item.addEventListener('click', (e) => {
+			e.preventDefault();
+			item.classList.toggle('active');
+		})
+	});
+
 
 
 
