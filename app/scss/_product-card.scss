@@ -3,32 +3,25 @@
 	width: 285px;
 	height: 413px;
 	position: relative;
-
-	margin-left: 100px;
-	margin-bottom: 50px; 
-
-	&__picture{
-		display: block;
-		width: 100%;
-		height: 320px;
-		border-radius: 4px;
-		position: relative;
-		overflow: hidden;
-	}
-
+	margin: 0 auto;
+ 
 	&__raiting{
 		width: 78px;
 		height: 14px;
-		background-image: url(../img/icons/card-rating-5.svg);
 		background-repeat: no-repeat;
 		background-position: center;
 		position: absolute;
 		top: 16px;
 		right: 16px;
+		z-index: 10;
 	}
 
-	&__img{
-		object-fit: cover;
+	&__raiting.rating-5{
+		background-image: url(../img/icons/card-rating-5.svg);
+	}
+
+	&__raiting.rating-4{
+		background-image: url(../img/icons/card-rating-4.svg);
 	}
 
 	&__favorite{
@@ -41,13 +34,31 @@
 		background-position: center;
 		position: absolute;
 		right: 16px;
-		bottom: 16px;
-		z-index: 20;
+		top: 272px;
+		z-index: 10;
+		transition: transform .2s ease;
+
+		&:hover{
+			transform: scale(1.2);
+		}
 
 		&.active{
 			background-color: $accent-red;
 			background-image: url(../img/icons/card-heart-white.svg);
 		}
+	}
+
+	&__picture{
+		display: block;
+		width: 100%;
+		height: 320px;
+		border-radius: 4px;
+		position: relative;
+		overflow: hidden;
+	}
+
+	&__img{
+		object-fit: cover;
 	}
 
 	&__description{
