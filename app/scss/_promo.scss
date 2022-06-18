@@ -1,11 +1,12 @@
 /*--------------------promo------------------*/
 .promo{
+	// border: 1px solid red;
 
 	&__content{
 		display: flex;
 		justify-content: center;
 		flex-wrap: wrap;
-		padding: 123px 10px 0 10px;
+		padding: 123px 10px 75px 10px;
 	}
 
 	&__item{

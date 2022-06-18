@@ -1519,7 +1519,7 @@ button {
   justify-content: center;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  padding: 123px 10px 0 10px;
+  padding: 123px 10px 75px 10px;
 }
 
 .promo__item {
@@ -1749,6 +1749,65 @@ button {
   line-height: 1.6;
   text-align: center;
   color: #1E212C;
+}
+
+/*-------------------popular-----------------*/
+.popular {
+  padding: 103px 0 165px 0;
+}
+
+.popular__title {
+  text-align: center;
+  margin-bottom: 57px;
+}
+
+.popular__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 5px 0 5px;
+}
+
+.popular__item-picture {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background-color: #1E212C;
+  overflow: hidden;
+}
+
+.popular__item-img {
+  -o-object-fit: cover;
+  object-fit: cover;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.popular__item-img:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+.popular__item-description {
+  padding: 25px 0 15px 0;
+}
+
+.popular__item-text {
+  display: block;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #1E212C;
+  text-align: center;
 }
 
 /*------------------subscribe----------------*/
