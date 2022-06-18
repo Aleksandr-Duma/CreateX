@@ -178,7 +178,7 @@ $(function(){
 
 /*---------------------trending-slider---------------------*/
 
-		$('.trending__slider').slick({
+	$('.presentation-slider').slick({
 		dots: false,
 		arrows: true,
 		// autoplay: true,
