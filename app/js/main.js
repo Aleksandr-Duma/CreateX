@@ -38,7 +38,7 @@ document.querySelectorAll('.select-wrap').forEach(function(selectWrap){
 	});
 });
 
-//........................timer.........................
+/*-----------------------timer-promo-----------------------*/
 
 document.addEventListener('DOMContentLoaded', function() {
 	const lastDate = new Date('September 18 2022 00:00:00');
@@ -122,7 +122,7 @@ $(function(){
 		// prevArrow: '.about-slider__nav-left',
 		// nextArrow: '.about-slider__nav-right'
 	});
-	// Add 0 in buttons slick-dots
+	// Add number 0 in native buttons slick-dots
 	const dots = document.querySelectorAll('.slick-dots li button');
 
 	dots.forEach(function(item, i) {
@@ -174,6 +174,39 @@ $(function(){
 	      	}
 	    }
 	  	]
+	});
+
+/*---------------------trending-slider---------------------*/
+
+		$('.trending__slider').slick({
+		dots: false,
+		arrows: true,
+		// autoplay: true,
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		// responsive: [
+	 //    {
+	 //      	breakpoint: 1200,
+	 //      	settings: {
+	 //        slidesToShow: 3,
+	 //        slidesToScroll: 2
+	 //      	}
+	 //    },
+	 //     {
+	 //      	breakpoint: 900,
+	 //      	settings: {
+	 //        slidesToShow: 2,
+	 //        slidesToScroll: 2 
+	 //      	}
+	 //    },
+	 //    {
+		//     breakpoint: 639,
+		//     settings: {
+	 //        slidesToShow: 1,
+	 //        slidesToScroll: 1
+	 //      	}
+	 //    }
+	 //  	]
 	});
 
 /*----------------------card-favorite----------------------*/
