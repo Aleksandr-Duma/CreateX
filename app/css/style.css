@@ -2003,6 +2003,96 @@ button {
   margin: 0 0 45px 0;
 }
 
+/*-------------------services----------------*/
+.services {
+  padding: 100px 0 100px 0;
+}
+
+.services__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.services__item {
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  padding: 17px 0 20px 0;
+}
+
+.services__item:not(:last-child)::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 90%;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(218, 219, 221, 0.1)), color-stop(rgba(218, 219, 221, 0.5)), color-stop(#dadbdd), color-stop(rgba(218, 219, 221, 0.5)), to(rgba(218, 219, 221, 0.1)));
+  background: -o-linear-gradient(top, rgba(218, 219, 221, 0.1), rgba(218, 219, 221, 0.5), #dadbdd, rgba(218, 219, 221, 0.5), rgba(218, 219, 221, 0.1));
+  background: linear-gradient(180deg, rgba(218, 219, 221, 0.1), rgba(218, 219, 221, 0.5), #dadbdd, rgba(218, 219, 221, 0.5), rgba(218, 219, 221, 0.1));
+  position: absolute;
+  top: 50%;
+  right: -16%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.services__item-icon {
+  width: 55px;
+  height: 55px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 22px;
+}
+
+.services__item-icon.delivery {
+  background-image: url(../img/icons/services-icon-delivery.svg);
+}
+
+.services__item-icon.support {
+  background-image: url(../img/icons/services-icon-support.svg);
+}
+
+.services__item-icon.security {
+  background-image: url(../img/icons/services-icon-security.svg);
+}
+
+.services__item-icon.payment {
+  background-image: url(../img/icons/services-icon-payment.svg);
+}
+
+.services__item-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.4;
+  color: #1E212C;
+  text-align: center;
+  margin: 0 0 10px 0;
+}
+
+.services__item-description {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  color: #8F9096;
+}
+
 /*------------------subscribe----------------*/
 .subscribe {
   background-color: #F4F5F6;

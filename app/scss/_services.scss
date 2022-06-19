@@ -1,0 +1,77 @@
+/*-------------------services----------------*/
+.services{
+	padding: 100px 0 100px 0;
+
+	&__container{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__item{
+		width: 20%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		position: relative;
+		padding: 17px 0 20px 0;
+
+		&:not(:last-child)::after{
+			content: "";
+			display: block;
+			width: 1px;
+			height: 90%;
+			background: linear-gradient(180deg, 
+			rgba(#DADBDD, .1), 
+			rgba(#DADBDD, .5), 
+			rgba(#DADBDD, 1), 
+			rgba(#DADBDD, .5), 
+			rgba(#DADBDD, .1));
+			position: absolute;
+			top: 50%;
+			right: -16%;
+			transform: translateY(-50%);
+		}
+	}
+
+	&__item-icon{
+		width: 55px;
+		height: 55px;
+		background-repeat: no-repeat;
+		background-position: center;
+		margin-bottom: 22px;
+	}
+
+	&__item-icon.delivery{
+		background-image: url(../img/icons/services-icon-delivery.svg);
+	}
+
+	&__item-icon.support{
+		background-image: url(../img/icons/services-icon-support.svg);
+	}
+
+	&__item-icon.security{
+		background-image: url(../img/icons/services-icon-security.svg);
+	}
+
+	&__item-icon.payment{
+		background-image: url(../img/icons/services-icon-payment.svg);
+	}
+
+	&__item-title{
+		font-weight: 700;
+		font-size: 20px;
+		line-height: 1.4;
+		color: $main-black;
+		text-align: center;
+		margin: 0 0 10px 0;
+	}
+
+	&__item-description{
+		display: inline-block;
+		font-size: 16px;
+		line-height: 1.6;
+		text-align: center;
+		color: $grey-text;
+	}
+}
