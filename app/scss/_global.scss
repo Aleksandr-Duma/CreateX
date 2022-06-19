@@ -103,6 +103,34 @@ button{
 		}
 }
 
+.mobile-app{
+		display: flex;
+		align-items: center;
+
+		&__link{
+				width: 162px;
+				height: 48px;
+				border-radius: 4px;
+				background-repeat: no-repeat;
+				background-position: center;
+				background-size: cover;
+				transition: opacity .2s ease;
+
+				&:hover{
+					opacity: 0.6;
+				}
+		}
+
+		&__link.apple{
+				background-image: url(../img/icons/app-store.svg);
+				margin-right: 25px;
+		}
+
+		&__link.google{
+				background-image: url(../img/icons/google-play.svg);
+		}
+}
+
 /*-------------------Custom-select----------------------*/
 
 .select-wrap{

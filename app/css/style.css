@@ -595,6 +595,40 @@ button {
   color: #17696A;
 }
 
+.mobile-app {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.mobile-app__link {
+  width: 162px;
+  height: 48px;
+  border-radius: 4px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  -webkit-transition: opacity .2s ease;
+  -o-transition: opacity .2s ease;
+  transition: opacity .2s ease;
+}
+
+.mobile-app__link:hover {
+  opacity: 0.6;
+}
+
+.mobile-app__link.apple {
+  background-image: url(../img/icons/app-store.svg);
+  margin-right: 25px;
+}
+
+.mobile-app__link.google {
+  background-image: url(../img/icons/google-play.svg);
+}
+
 /*-------------------Custom-select----------------------*/
 .select-wrap {
   position: relative;
@@ -1560,7 +1594,9 @@ button {
 }
 
 .product-card__large-price .sale-price {
+  display: inline-block;
   color: #FF4242;
+  margin-right: 5px;
 }
 
 .product-card__large-price .old-price {
@@ -1916,7 +1952,7 @@ button {
 
 /*---------------------sale------------------*/
 .sale-block {
-  padding: 108px 0 80px 0;
+  padding: 108px 0 125px 0;
 }
 
 .sale-block__title {
@@ -1925,6 +1961,46 @@ button {
 
 .sale-block__link-wrap {
   text-align: center;
+}
+
+/*------------------enjoy-block--------------*/
+.enjoy-block {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(9.5%, #fff), color-stop(9.5%, #1E212C));
+  background: -o-linear-gradient(top, #fff 9.5%, #1E212C 9.5% 90%);
+  background: linear-gradient(180deg, #fff 9.5%, #1E212C 9.5% 90%);
+}
+
+.enjoy-block__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.enjoy-block__image {
+  width: 490px;
+  height: 330px;
+  background-image: url(../img/bg/enjoy-block-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-left: -28px;
+}
+
+.enjoy-block__content {
+  width: 50%;
+  height: 300px;
+  padding: 93px 0 0 10px;
+}
+
+.enjoy-block__title {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 1.3;
+  color: #fff;
+  margin: 0 0 45px 0;
 }
 
 /*------------------subscribe----------------*/
@@ -2228,39 +2304,12 @@ button {
   background-image: url(../img/icons/pinterest-icon-green.svg);
 }
 
-.footer__column-app {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+.footer__column .mobile-app {
   padding: 8px 0 0 0;
 }
 
-.footer__column-app-link {
-  width: 162px;
-  height: 48px;
-  border-radius: 4px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  -webkit-transition: opacity .2s ease;
-  -o-transition: opacity .2s ease;
-  transition: opacity .2s ease;
-}
-
-.footer__column-app-link:hover {
-  opacity: 0.6;
-}
-
-.footer__column-app-link.apple {
-  background-image: url(../img/icons/app-store.svg);
+.footer__column .mobile-app__link.apple {
   margin-right: 20px;
-}
-
-.footer__column-app-link.google {
-  background-image: url(../img/icons/google-play.svg);
 }
 
 .footer__copy {

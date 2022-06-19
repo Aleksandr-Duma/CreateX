@@ -91,7 +91,6 @@
 	height: 540px;
 	position: relative;
 	margin: 0 auto;
-	// border: 1px solid green;
 
 	.product-card__favorite{
 		top: 390px;
@@ -134,7 +133,9 @@
 		margin: 0;
 
 		.sale-price{
+			display: inline-block;
 			color: $accent-red;
+			margin-right: 5px;
 		}
 
 		.old-price{
