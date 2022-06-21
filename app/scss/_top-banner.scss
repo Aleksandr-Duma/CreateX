@@ -11,7 +11,7 @@
 		background-repeat: no-repeat;
 		background-position: center;
 		position: absolute;
-		top: 50%;
+		top: 48%;
 		z-index: 20;
 		transition: background .2s ease;
 	}
@@ -73,7 +73,7 @@
 	}
 
 	&__item{
-		height: calc(100vh - 128px);
+		height: calc(102.5vh - 162px);
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: cover;
@@ -96,7 +96,7 @@
 	}
 
 	&__content{
-		padding: 173px 0 100px 0;
+		padding: 139px 0 100px 0;
 	}
 
 	&__suptitle{

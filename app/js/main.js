@@ -104,11 +104,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
 /*-----------------------header-sale-----------------------*/
 
-const headerSale = document.querySelector('.header__sale');
+// const headerSale = document.querySelector('.header__sale');
 
-setTimeout(function() {
-	headerSale.classList.add('show');
-}, 3000);
+// setTimeout(function() {
+// 	headerSale.classList.add('show');
+// }, 3000);
 
 
 
