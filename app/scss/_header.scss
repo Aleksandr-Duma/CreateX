@@ -1,6 +1,7 @@
 /*-------------------header------------------*/
 .header{
-	
+	position: relative;
+	z-index: 35;
 }
 
 .header__top{
@@ -160,7 +161,6 @@
 	min-height: 84px;
 	background-color: #fff;
 	position: relative;
-	// z-index: 10;
 	padding: 20px 0 20px 0;
 
 	&-container{
@@ -191,7 +191,6 @@
 
 		&-item{
 			padding: 10px 10px;
-			// border: 1px solid red;
 			margin: 0 10px;
 
 			&:hover > .sub-menu{
@@ -201,7 +200,6 @@
 			&:hover > .header__main-list-link{
 				color: $main-green;
 			}
-
 		}
 
 		&-link{
@@ -516,4 +514,8 @@
 			}
 		}
 	}
+}
+
+.sub-menu.open{
+	display: block;
 }

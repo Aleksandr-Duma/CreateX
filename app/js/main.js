@@ -102,15 +102,23 @@ document.addEventListener('DOMContentLoaded', function() {
 
 });
 
-/*-----------------------header-sale-----------------------*/
+/*--------------------Hover on submenu---------------------*/
 
-// const headerSale = document.querySelector('.header__sale');
+const menuItem = document.querySelectorAll('.header__main-list-item');
+const subMenu = document.querySelector('.sub-menu');
+const overlay = document.querySelector('.overlay');
 
-// setTimeout(function() {
-// 	headerSale.classList.add('show');
-// }, 3000);
+menuItem.forEach(item => {
+	item.addEventListener('mouseover', () => {
+		item.querySelector('.sub-menu').classList.add('open');
+		overlay.classList.add('show');
+	});
 
-
+	item.addEventListener('mouseout', () => {
+		item.querySelector('.sub-menu').classList.remove('open');
+		overlay.classList.remove('show');
+	});
+});
 
 $(function(){
 
@@ -212,7 +220,6 @@ $(function(){
 /*----------------------card-favorite----------------------*/
 
 const favoriteCircle = document.querySelectorAll('.product-card__favorite');
-	console.log(favoriteCircle.length);
 	favoriteCircle.forEach(item => {
 		item.addEventListener('click', () => {
 			item.classList.toggle('active');

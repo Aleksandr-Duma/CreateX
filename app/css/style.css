@@ -540,7 +540,23 @@ button {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  position: relative;
   overflow: hidden;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 30;
+  display: none;
+}
+
+.overlay.show {
+  display: block;
 }
 
 .container {
@@ -664,6 +680,11 @@ button {
 }
 
 /*-------------------header------------------*/
+.header {
+  position: relative;
+  z-index: 35;
+}
+
 .header__top {
   background-color: #1E212C;
 }
@@ -1285,6 +1306,10 @@ button {
 
 .sub-menu__promo-link:hover::after {
   background-image: url(../img/icons/promo-arrow-link-white.svg);
+}
+
+.sub-menu.open {
+  display: block;
 }
 
 /*------------------top-banner---------------*/
