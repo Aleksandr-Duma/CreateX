@@ -102,11 +102,46 @@ document.addEventListener('DOMContentLoaded', function() {
 
 });
 
-/*--------------------Hover on submenu---------------------*/
+/*---------------------------------------------------------*/
 
+const searchButtonHeader = document.querySelector('.button-search-header');
+const searchBlockForm = document.querySelector('.search-block');
+const orderBlock = document.querySelector('.order-block');
+const burger = document.querySelector('.burger');
+const buttonClose = document.querySelector('.button-close');
+const listMenu = document.querySelector('.header__main-list');
 const menuItem = document.querySelectorAll('.header__main-list-item');
 const subMenu = document.querySelector('.sub-menu');
 const overlay = document.querySelector('.overlay');
+
+/*------------------Search-button-header-------------------*/
+
+searchButtonHeader.addEventListener('click', () => {
+	orderBlock.style.display = 'none';
+	burger.style.display = 'none';
+	searchButtonHeader.style.display = 'none';
+	searchBlockForm.classList.add('active');
+});
+
+searchBlockForm.addEventListener('submit', (e) => {
+	e.preventDefault();
+	orderBlock.style.display = 'flex';
+	burger.style.display = 'flex';
+	searchButtonHeader.style.display = 'block';
+	searchBlockForm.classList.remove('active');
+});
+
+/*-----------------------Burger-menu-----------------------*/
+
+burger.addEventListener('click', () => {
+	listMenu.classList.add('active');
+});
+
+buttonClose.addEventListener('click', () => {
+	listMenu.classList.remove('active');
+});
+
+/*--------------------Hover on submenu---------------------*/
 
 menuItem.forEach(item => {
 	item.addEventListener('mouseover', () => {
