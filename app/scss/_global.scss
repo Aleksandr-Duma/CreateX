@@ -76,75 +76,87 @@ button{
 }
 
 .grey-text{
-		color: $grey-text;
+	color: $grey-text;
 }
 
 .title{
-		font-weight: 900;
-		font-size: 46px;
-		line-height: 1.2;
-		letter-spacing: 0.4px;
-		margin: 0;
+	font-weight: 900;
+	font-size: 46px;
+	line-height: 1.2;
+	letter-spacing: 0.4px;
+	margin: 0;
 }
 
 .primary-link{
-	 	display: inline-block;
-		font-weight: 700;
-		font-size: 16px;
-		line-height: 1;
-		letter-spacing: 0.2px;
-		color: $main-green;
-		border-radius: 4px;
-		border: 1px solid $main-green;
-		padding: 18px 40px 16px 40px;
-		transition: background .2s ease;
+	display: inline-block;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1;
+	letter-spacing: 0.2px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	color: $main-green;
+	border-radius: 4px;
+	border: 1px solid $main-green;
+	padding: 18px 40px 16px 40px;
+	transition: background .2s ease;
+
+	@media (max-width: 990px){
+		font-size: 13px;
+		padding: 14px 26px 12px 26px;
+	}
+
+	&:hover{
+		background-color: $main-green;
+		color: #fff;
+	}
+
+	&.sale{
+		margin-right: 25px;
+
+		@media (max-width: 990px){
+			margin-right: 10px;
+		}
+	}
+
+	&.active{
+		background-color: $main-green;
+		color: #fff;
 
 		&:hover{
-			background-color: $main-green;
-			color: #fff;
+			background-color: transparent;
+			color: $main-green;
 		}
-
-		&.sale{
-				margin-right: 25px;
-		}
-
-		&.active{
-			  background-color: $main-green;
-				color: #fff;
-
-				&:hover{
-					background-color: transparent;
-					color: $main-green;
-				}
-		}
+	}
 }
 
 .mobile-app{
-		display: flex;
-		align-items: center;
+	display: flex;
+	align-items: center;
 
-		&__link{
-				width: 162px;
-				height: 48px;
-				border-radius: 4px;
-				background-repeat: no-repeat;
-				background-position: center;
-				background-size: cover;
-				transition: opacity .2s ease;
+	&__link{
+		width: 162px;
+		height: 48px;
+		border-radius: 4px;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		transition: opacity .2s ease;
 
-				&:hover{
-					opacity: 0.6;
-				}
+		&:hover{
+			opacity: 0.6;
 		}
+	}
 
-		&__link.apple{
-				background-image: url(../img/icons/app-store.svg);
-				margin-right: 25px;
-		}
+	&__link.apple{
+		background-image: url(../img/icons/app-store.svg);
+		margin-right: 25px;
+	}
 
-		&__link.google{
-				background-image: url(../img/icons/google-play.svg);
-		}
+	&__link.google{
+		background-image: url(../img/icons/google-play.svg);
+	}
 }
 
 /*-------------------Custom-select----------------------*/

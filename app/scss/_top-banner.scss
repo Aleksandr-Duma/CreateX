@@ -15,6 +15,17 @@
 		z-index: 20;
 		transition: background .2s ease;
 		box-shadow: 0px 0px 13px 0px rgba($main-black, 0.2);
+
+		@media (max-width: 990px){
+			width: 35px;
+			height: 35px;
+			background-color: rgba(255, 255, 255, .3);
+			top: 45%;
+		}
+
+		@media (max-width: 768px){
+			display: none;
+		}
 	}
 
 	.slick-prev{
@@ -52,6 +63,22 @@
 			transform: translateX(-86%);
 		}
 
+		@media (max-width: 1240px){
+			left: 30px;
+			transform: translateX(0%);
+		}
+
+		@media (max-width: 990px){
+			left: 20px;
+		}
+
+		@media (max-width: 768px){
+			left: 50%;
+			bottom: 60px;
+			transform: translateX(-50%);
+			padding-left: 0;
+		}	
+
 		li{
 			width: 178px;
 			border-bottom: 2px solid $grey-text;
@@ -59,6 +86,19 @@
 
 			@media (max-width: 1400px){
 				width: 140px;
+			}
+
+			@media (max-width: 1240px){
+				width: 110px;
+			}
+
+			@media (max-width: 990px){
+				width: 80px;
+			}
+
+			@media (max-width: 560px){
+				width: 50px;
+				text-align: center;
 			}
 
 			button{
@@ -72,6 +112,11 @@
 				border: none;
 				outline: none;
 				padding: 0 0 17px 0;
+
+				@media (max-width: 1240px){
+					font-size: 20px;
+					padding: 0 0 10px 0;
+				}
 			}
 		}
 
@@ -90,8 +135,12 @@
 		background-position: center;
 		background-size: cover;
 
-		@media (max-width: 1400px){
-			height: calc(100vh - 162px);
+		@media (max-width: 990px){
+			height: calc(102.5vh - 132px);
+		}
+
+		@media (max-width: 768px){
+			height: calc(102.5vh - 120px);
 		}
 	}
 
@@ -117,6 +166,22 @@
 		@media (max-width: 1400px){
 			padding: 100px 0 100px 60px;
 		}
+
+		@media (max-width: 1180px){
+			padding: 120px 0 100px 60px;
+		}
+
+		@media (max-width: 990px){
+			padding: 120px 0 100px 40px;
+		}
+
+		@media (max-width: 768px){
+			padding: 40px 0 100px 0;
+		}
+
+		@media (max-width: 560px){
+			padding: 60px 0 100px 0;
+		}
 	}
 
 	&__suptitle{
@@ -127,6 +192,11 @@
 		line-height: 1.5;
 		letter-spacing: 1px;
 		margin: 0 0 18px 0;
+
+		@media (max-width: 1180px){
+			font-size: 16px;
+			margin: 0 0 12px 0;
+		}
 	}
 
 	&__title{
@@ -136,9 +206,26 @@
 		letter-spacing: 1px;
 		margin: 0 0 53px 0;
 
-		// @media (max-width: 1400px){
-		// 	margin: 0 0 40px 0;
-		// }
+		@media (max-width: 1180px){
+			font-size: 56px;
+			margin: 0 0 30px 0;
+		}
+
+		@media (max-width: 990px){
+			font-size: 50px;
+		}
+
+		@media (max-width: 768px){
+			max-width: 330px;
+			line-height: 1.2;
+			margin: 0 0 10px 0;
+		}
+
+		@media (max-width: 560px){
+			max-width: 280px;
+			font-size: 42px;
+			margin: 0 0 60px 0;
+		}
 	}
 
 	&__links-wrap{

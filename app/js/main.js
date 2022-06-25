@@ -106,28 +106,27 @@ document.addEventListener('DOMContentLoaded', function() {
 
 const searchButtonHeader = document.querySelector('.button-search-header');
 const searchBlockForm = document.querySelector('.search-block');
-const orderBlock = document.querySelector('.order-block');
+const orderWrap = document.querySelector('.order-wrap');
 const burger = document.querySelector('.burger');
-const buttonClose = document.querySelector('.button-close');
+const buttonClose = document.querySelector('.munu-close__button');
 const listMenu = document.querySelector('.header__main-list');
 const menuItem = document.querySelectorAll('.header__main-list-item');
+// const menuLink = document.querySelectorAll('.header__main-list-link');
 const subMenu = document.querySelector('.sub-menu');
 const overlay = document.querySelector('.overlay');
 
 /*------------------Search-button-header-------------------*/
 
 searchButtonHeader.addEventListener('click', () => {
-	orderBlock.style.display = 'none';
-	burger.style.display = 'none';
-	searchButtonHeader.style.display = 'none';
+	orderWrap.classList.add('hide');
+	searchButtonHeader.classList.add('hide');
 	searchBlockForm.classList.add('active');
 });
 
 searchBlockForm.addEventListener('submit', (e) => {
 	e.preventDefault();
-	orderBlock.style.display = 'flex';
-	burger.style.display = 'flex';
-	searchButtonHeader.style.display = 'block';
+	orderWrap.classList.remove('hide');
+	searchButtonHeader.classList.remove('hide');
 	searchBlockForm.classList.remove('active');
 });
 
@@ -135,10 +134,12 @@ searchBlockForm.addEventListener('submit', (e) => {
 
 burger.addEventListener('click', () => {
 	listMenu.classList.add('active');
+	document.body.style.overflow = 'hidden';
 });
 
 buttonClose.addEventListener('click', () => {
 	listMenu.classList.remove('active');
+	document.body.style.overflow = '';
 });
 
 /*--------------------Hover on submenu---------------------*/
