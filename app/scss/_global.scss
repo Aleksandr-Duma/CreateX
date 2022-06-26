@@ -2,37 +2,37 @@
 *,
 *:before,
 *:after{
-	  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 html, 
 body{
-		height: 100%;
-		min-width: 320px;
+	height: 100%;
+	min-width: 320px;
 }
 
 body{
-		font-family: 'Lato', sans-serif;
-		font-weight: 400;
-		font-size: 16px;
-		color: $main-black;
-		background-color: #fff;
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	color: $main-black;
+	background-color: #fff;
 }
 
 img{
-		display: block;
-		width: 100%;
-		height: auto; 
+	display: block;
+	width: 100%;
+	height: auto; 
 }
 
 a{
-		text-decoration: none;
+	text-decoration: none;
 }
 
 button{
-		border: none;
-		outline: none;
-		cursor: pointer;
+	border: none;
+	outline: none;
+	cursor: pointer;
 }
 
 .visually-hidden {
@@ -47,11 +47,11 @@ button{
 }
 
 .wrapper{
-		min-height: 100vh;
-		display: flex;
-		flex-direction: column;
-		position: relative;
-		overflow: hidden;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	overflow: hidden;
 }
 
 .overlay{
@@ -70,9 +70,9 @@ button{
 }
 
 .container{ 
-		max-width: 1270px; 
-		padding: 0 15px;
-		margin: 0 auto;
+	max-width: 1270px; 
+	padding: 0 15px;
+	margin: 0 auto;
 }
 
 .grey-text{
@@ -102,7 +102,7 @@ button{
 	padding: 18px 40px 16px 40px;
 	transition: background .2s ease;
 
-	@media (max-width: 990px){
+	@media (max-width: 640px){
 		font-size: 13px;
 		padding: 14px 26px 12px 26px;
 	}
@@ -115,7 +115,7 @@ button{
 	&.sale{
 		margin-right: 25px;
 
-		@media (max-width: 990px){
+		@media (max-width: 640px){
 			margin-right: 10px;
 		}
 	}
@@ -162,33 +162,33 @@ button{
 /*-------------------Custom-select----------------------*/
 
 .select-wrap{
-		position: relative;
+	position: relative;
 }
 
 .select{
-		position: relative;
-		display: block;
+	position: relative;
+	display: block;
 }
 
 .select:focus, .active{
-		outline: none;
+	outline: none;
 }
 
 .select-list{
-		list-style-type: none;
-		position: absolute;
-		top: 100%;
-		left: 0;
-		overflow: hidden;
-		padding: 0;
-		margin: 0;
-		display: none;
+	list-style-type: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	overflow: hidden;
+	padding: 0;
+	margin: 0;
+	display: none;
 }
 
 .select-list.visible{
-		display: block;
+	display: block;
 }
 
 .input-hidden{
-		display: none;
+	display: none;
 }

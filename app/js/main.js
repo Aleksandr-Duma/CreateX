@@ -161,8 +161,8 @@ $(function(){
 /*----------------------banner-slider----------------------*/
 
 	$('.banner-slider').slick({
-		dots: true,
-		autoplay: true
+		dots: true
+		// autoplay: true
 		// prevArrow: '.about-slider__nav-left',
 		// nextArrow: '.about-slider__nav-right'
 	});
