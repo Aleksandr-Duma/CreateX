@@ -85,6 +85,14 @@ button{
 	line-height: 1.2;
 	letter-spacing: 0.4px;
 	margin: 0;
+
+	@media (max-width: 990px){
+		font-size: 40px;
+	}
+
+	@media (max-width: 640px){
+		font-size: 34px;
+	}
 }
 
 .primary-link{

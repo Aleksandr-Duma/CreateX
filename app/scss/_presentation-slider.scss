@@ -2,6 +2,10 @@
 .presentation-slider{
 	margin-bottom: 75px;
 
+	@media (max-width: 1280px){
+		margin-bottom: 50px;
+	}
+
 	.slick-arrow{
 		width: 48px;
 		height: 48px;
@@ -14,11 +18,23 @@
 		top: -98px;
 		z-index: 20;
 		transition: background .2s ease;
+
+		@media (max-width: 990px){
+			top: -80px;
+		}
+
+		@media (max-width: 560px){
+			top: 40%;
+		}
 	}
 
 	.slick-prev{
 		background-image: url(../img/icons/slider-banner-arrow-left.svg);
 		right: 48px;
+
+		@media (max-width: 560px){
+			left: -10px;		
+		}
 
 		&:hover{
 			background-color: $main-green;
@@ -29,6 +45,10 @@
 	.slick-next{
 		background-image: url(../img/icons/slider-banner-arrow-right.svg);
 		right: 0;
+
+		@media (max-width: 560px){
+			right: -10px;		
+		}
 
 		&:hover{
 			background-color: $main-green;

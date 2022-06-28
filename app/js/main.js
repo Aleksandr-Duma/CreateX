@@ -161,10 +161,8 @@ $(function(){
 /*----------------------banner-slider----------------------*/
 
 	$('.banner-slider').slick({
-		dots: true
-		// autoplay: true
-		// prevArrow: '.about-slider__nav-left',
-		// nextArrow: '.about-slider__nav-right'
+		dots: true,
+		autoplay: true
 	});
 	// Add number 0 in native buttons slick-dots
 	const dots = document.querySelectorAll('.slick-dots li button');
@@ -178,7 +176,7 @@ $(function(){
 	$('.arrivals__slider').slick({
 		dots: true,
 		arrows: false,
-		// autoplay: true,
+		autoplay: true,
 		slidesToShow: 6,
 		slidesToScroll: 2,
 		responsive: [
@@ -225,32 +223,25 @@ $(function(){
 	$('.presentation-slider').slick({
 		dots: false,
 		arrows: true,
-		// autoplay: true,
+		autoplay: true,
 		slidesToShow: 3,
 		slidesToScroll: 1,
-		// responsive: [
-	 //    {
-	 //      	breakpoint: 1200,
-	 //      	settings: {
-	 //        slidesToShow: 3,
-	 //        slidesToScroll: 2
-	 //      	}
-	 //    },
-	 //     {
-	 //      	breakpoint: 900,
-	 //      	settings: {
-	 //        slidesToShow: 2,
-	 //        slidesToScroll: 2 
-	 //      	}
-	 //    },
-	 //    {
-		//     breakpoint: 639,
-		//     settings: {
-	 //        slidesToShow: 1,
-	 //        slidesToScroll: 1
-	 //      	}
-	 //    }
-	 //  	]
+		responsive: [
+	    {
+	      	breakpoint: 990,
+	      	settings: {
+	        slidesToShow: 2,
+	        slidesToScroll: 1
+	      	}
+	    },
+	    {
+		    breakpoint: 690,
+		    settings: {
+	        slidesToShow: 1,
+	        slidesToScroll: 1
+	      	}
+	    }
+	  	]
 	});
 
 /*----------------------card-favorite----------------------*/

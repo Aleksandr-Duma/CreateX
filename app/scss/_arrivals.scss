@@ -2,22 +2,47 @@
 .arrivals{
 	padding: 68px 0 30px 0;
 
+	@media (max-width: 1280px){
+		padding: 40px 0 20px 0;
+	}
+
+	@media (max-width: 640px){
+		padding: 40px 0 10px 0;
+	}
+
 	&__title-wrap{
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		margin-bottom: 60px;
+
+		@media (max-width: 990px){
+			margin-bottom: 40px;
+		}
 	}
 
 	&__title{
 		margin-bottom: 27px;
+
+		@media (max-width: 990px){
+			margin-bottom: 20px;
+		}
+
+		@media (max-width: 640px){
+			margin-bottom: 10px;
+		}
 	}
 
 	&__subtitle{
 		font-size: 18px;
 		line-height: 1.2;
 		color: $grey-text;
+		text-align: center;
 		margin-bottom: 5px;
+
+		@media (max-width: 990px){
+			font-size: 16px;
+		}
 	}
 
 	&__link-collection{
@@ -27,6 +52,10 @@
 		line-height: 1.2;
 		color: $main-green;
 
+		@media (max-width: 990px){
+			font-size: 16px;
+		}
+
 		&:hover{
 			text-decoration: none;
 		}
@@ -34,6 +63,10 @@
 
 	&__slider{
 		padding-bottom: 100px;
+
+		@media (max-width: 1280px){
+			padding-bottom: 60px;
+		}
 
 		.slick-dots{
 			list-style: none;
@@ -63,7 +96,7 @@
 					padding: 0;
 
 					@media (max-width: 640px){
-						width: 15px;
+						width: 18px;
 						height: 3px;
 					}
 				}

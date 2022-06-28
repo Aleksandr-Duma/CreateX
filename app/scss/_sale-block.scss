@@ -2,8 +2,20 @@
 .sale-block{
 	padding: 108px 0 125px 0;
 
+	@media (max-width: 1280px){
+		padding: 50px 0 40px 0;
+	}
+
 	&__title{
 		margin-bottom: 60px;
+
+		@media (max-width: 1280px){
+			margin-bottom: 40px;
+		}
+
+		@media (max-width: 560px){
+			text-align: center;
+		}
 	}
 
 	&__link-wrap{
