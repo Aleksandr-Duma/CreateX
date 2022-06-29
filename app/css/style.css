@@ -649,6 +649,14 @@ button {
   align-items: center;
 }
 
+@media (max-width: 560px) {
+  .mobile-app {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+}
+
 .mobile-app__link {
   width: 162px;
   height: 48px;
@@ -661,6 +669,14 @@ button {
   transition: opacity .2s ease;
 }
 
+@media (max-width: 460px) {
+  .mobile-app__link {
+    width: 130px;
+    height: 40px;
+    border-radius: 3px;
+  }
+}
+
 .mobile-app__link:hover {
   opacity: 0.6;
 }
@@ -668,6 +684,12 @@ button {
 .mobile-app__link.apple {
   background-image: url(../img/icons/app-store.svg);
   margin-right: 25px;
+}
+
+@media (max-width: 990px) {
+  .mobile-app__link.apple {
+    margin-right: 10px;
+  }
 }
 
 .mobile-app__link.google {
@@ -3260,6 +3282,14 @@ button {
   background: linear-gradient(180deg, #fff 9.5%, #1E212C 9.5% 90%);
 }
 
+@media (max-width: 768px) {
+  .enjoy-block {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #fff), color-stop(5%, #1E212C));
+    background: -o-linear-gradient(top, #fff 5%, #1E212C 5% 90%);
+    background: linear-gradient(180deg, #fff 5%, #1E212C 5% 90%);
+  }
+}
+
 .enjoy-block__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3267,6 +3297,20 @@ button {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  padding: 0 0 0 0;
+}
+
+@media (max-width: 768px) {
+  .enjoy-block__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0 0 0 0;
+  }
 }
 
 .enjoy-block__image {
@@ -3274,15 +3318,60 @@ button {
   height: 330px;
   background-image: url(../img/bg/enjoy-block-bg.png);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: right top;
   background-size: cover;
-  margin-left: -28px;
+  margin: 0 0 0 -28px;
+}
+
+@media (max-width: 1180px) {
+  .enjoy-block__image {
+    width: 50%;
+  }
+}
+
+@media (max-width: 990px) {
+  .enjoy-block__image {
+    height: 300px;
+  }
+}
+
+@media (max-width: 990px) {
+  .enjoy-block__image {
+    width: 100%;
+    margin: 0 0 0 0;
+  }
+}
+
+@media (max-width: 560px) {
+  .enjoy-block__image {
+    height: 250px;
+  }
 }
 
 .enjoy-block__content {
   width: 50%;
   height: 300px;
-  padding: 93px 0 0 10px;
+  padding: 93px 15px 0 10px;
+}
+
+@media (max-width: 990px) {
+  .enjoy-block__content {
+    width: 100%;
+    height: auto;
+    padding: 93px 15px 40px 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .enjoy-block__content {
+    padding: 50px 15px 40px 15px;
+  }
+}
+
+@media (max-width: 560px) {
+  .enjoy-block__content {
+    text-align: center;
+  }
 }
 
 .enjoy-block__title {
@@ -3293,9 +3382,34 @@ button {
   margin: 0 0 45px 0;
 }
 
+@media (max-width: 990px) {
+  .enjoy-block__title {
+    font-size: 26px;
+    margin: 0 0 25px 0;
+  }
+}
+
+@media (max-width: 560px) {
+  .enjoy-block__title {
+    font-size: 22px;
+  }
+}
+
 /*-------------------services----------------*/
 .services {
   padding: 100px 0 100px 0;
+}
+
+@media (max-width: 1180px) {
+  .services {
+    padding: 50px 0 50px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .services {
+    padding: 30px 0 30px 0;
+  }
 }
 
 .services__container {
@@ -3308,10 +3422,12 @@ button {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .services__item {
-  width: 20%;
+  width: 25%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3336,10 +3452,28 @@ button {
   background: linear-gradient(180deg, rgba(218, 219, 221, 0.1), rgba(218, 219, 221, 0.5), #dadbdd, rgba(218, 219, 221, 0.5), rgba(218, 219, 221, 0.1));
   position: absolute;
   top: 50%;
-  right: -16%;
+  right: 0;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+}
+
+@media (max-width: 990px) {
+  .services__item {
+    width: 50%;
+  }
+  .services__item:nth-child(2n)::after {
+    display: none;
+  }
+}
+
+@media (max-width: 560px) {
+  .services__item {
+    width: 100%;
+  }
+  .services__item:nth-child(odd)::after {
+    display: none;
+  }
 }
 
 .services__item-icon {
@@ -3348,6 +3482,12 @@ button {
   background-repeat: no-repeat;
   background-position: center;
   margin-bottom: 22px;
+}
+
+@media (max-width: 560px) {
+  .services__item-icon {
+    margin-bottom: 15px;
+  }
 }
 
 .services__item-icon.delivery {
@@ -3375,6 +3515,12 @@ button {
   margin: 0 0 10px 0;
 }
 
+@media (max-width: 1180px) {
+  .services__item-title {
+    font-size: 18px;
+  }
+}
+
 .services__item-description {
   display: inline-block;
   font-size: 16px;
@@ -3383,9 +3529,21 @@ button {
   color: #8F9096;
 }
 
+@media (max-width: 1180px) {
+  .services__item-description {
+    font-size: 14px;
+  }
+}
+
 /*---------------instagram-block-------------*/
 .instagram-block {
   padding: 58px 0 60px 0;
+}
+
+@media (max-width: 1180px) {
+  .instagram-block {
+    padding: 40px 0 20px 0;
+  }
 }
 
 .instagram-block__container {
@@ -3396,6 +3554,41 @@ button {
   -ms-flex-pack: justify;
   justify-content: space-between;
   padding: 0 20px 0 20px;
+}
+
+@media (max-width: 990px) {
+  .instagram-block__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+.instagram-block__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+@media (max-width: 990px) {
+  .instagram-block__content {
+    width: 100%;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-bottom: 30px;
+  }
 }
 
 .instagram-block__suptitle {
@@ -3409,17 +3602,39 @@ button {
   margin: 0 0 13px 0;
 }
 
+@media (max-width: 990px) {
+  .instagram-block__suptitle {
+    line-height: 1.2;
+    margin: 0 0 10px 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .instagram-block__suptitle {
+    font-size: 14px;
+  }
+}
+
 .instagram-block__title {
-  font-weight: 900;
-  font-size: 46px;
-  line-height: 1.3;
-  color: #1E212C;
   margin: 0 0 55px 0;
+}
+
+@media (max-width: 990px) {
+  .instagram-block__title {
+    margin: 0 0 20px 0;
+  }
 }
 
 .instagram-block__link {
   position: relative;
   padding: 18px 40px 16px 75px;
+}
+
+@media (max-width: 640px) {
+  .instagram-block__link {
+    font-size: 13px;
+    padding: 14px 26px 12px 60px;
+  }
 }
 
 .instagram-block__link::before {
@@ -3437,6 +3652,12 @@ button {
   transform: translateY(-50%);
 }
 
+@media (max-width: 640px) {
+  .instagram-block__link::before {
+    left: 25px;
+  }
+}
+
 .instagram-block__link:hover::before {
   content: "";
   width: 30px;
@@ -3450,12 +3671,56 @@ button {
   display: flex;
 }
 
+@media (max-width: 990px) {
+  .instagram-block__preview {
+    width: 100%;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 640px) {
+  .instagram-block__preview {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
 .instagram-block__preview-item {
   width: 260px;
   height: 260px;
   background-color: #1E212C;
   overflow: hidden;
   margin: 0 0 0 15px;
+}
+
+@media (max-width: 1280px) {
+  .instagram-block__preview-item {
+    width: 240px;
+    height: 240px;
+  }
+}
+
+@media (max-width: 1180px) {
+  .instagram-block__preview-item {
+    width: 200px;
+    height: 200px;
+    margin: 0 0 0 5px;
+  }
+}
+
+@media (max-width: 990px) {
+  .instagram-block__preview-item {
+    width: 190px;
+    height: 190px;
+    margin: 0 0 10px 0;
+  }
 }
 
 .instagram-block__preview-img {
@@ -3478,6 +3743,18 @@ button {
   padding: 125px 0 100px 0;
 }
 
+@media (max-width: 1280px) {
+  .fashion-blog {
+    padding: 80px 0 70px 0;
+  }
+}
+
+@media (max-width: 560px) {
+  .fashion-blog {
+    padding: 50px 0 50px 0;
+  }
+}
+
 .fashion-blog__container {
   padding: 0 20px;
 }
@@ -3495,6 +3772,30 @@ button {
   margin-bottom: 58px;
 }
 
+@media (max-width: 990px) {
+  .fashion-blog__head {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 560px) {
+  .fashion-blog__head {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 560px) {
+  .fashion-blog__title {
+    margin-bottom: 10px;
+  }
+}
+
 .fashion-blog__link {
   font-size: 14px;
   letter-spacing: 0.5px;
@@ -3510,11 +3811,30 @@ button {
   justify-content: space-between;
 }
 
+@media (max-width: 990px) {
+  .fashion-blog__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
 .fashion-blog__card {
   width: 49%;
   border-radius: 4px;
   -webkit-box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.16), 0px 30px 24px -10px rgba(154, 156, 165, 0.1), 0px 12px 10px -6px rgba(154, 156, 165, 0.08), 0px 4px 4px -4px rgba(30, 33, 44, 0.05);
   box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.16), 0px 30px 24px -10px rgba(154, 156, 165, 0.1), 0px 12px 10px -6px rgba(154, 156, 165, 0.08), 0px 4px 4px -4px rgba(30, 33, 44, 0.05);
+}
+
+@media (max-width: 990px) {
+  .fashion-blog__card {
+    width: 100%;
+    margin-bottom: 15px;
+  }
 }
 
 .fashion-blog__card-picture {
@@ -3524,15 +3844,28 @@ button {
   overflow: hidden;
 }
 
+@media (max-width: 560px) {
+  .fashion-blog__card-picture {
+    height: 210px;
+  }
+}
+
 .fashion-blog__card-img {
   display: block;
   width: 100%;
+  height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
 }
 
 .fashion-blog__card-description {
   padding: 25px 20px 20px 25px;
+}
+
+@media (max-width: 560px) {
+  .fashion-blog__card-description {
+    padding: 15px 15px 15px 15px;
+  }
 }
 
 .fashion-blog__card-title {
@@ -3547,6 +3880,14 @@ button {
   transition: color .2s ease;
 }
 
+@media (max-width: 560px) {
+  .fashion-blog__card-title {
+    font-size: 16px;
+    line-height: 1.3;
+    margin: 0 0 8px 0;
+  }
+}
+
 .fashion-blog__card-title:hover {
   color: #17696A;
 }
@@ -3558,6 +3899,12 @@ button {
   margin-bottom: 17px;
 }
 
+@media (max-width: 560px) {
+  .fashion-blog__card-options {
+    margin-bottom: 10px;
+  }
+}
+
 .fashion-blog__card-options-item {
   font-weight: 400;
   font-size: 14px;
@@ -3565,6 +3912,13 @@ button {
   color: #8F9096;
   position: relative;
   margin-right: 25px;
+}
+
+@media (max-width: 560px) {
+  .fashion-blog__card-options-item {
+    font-size: 10px;
+    margin-right: 15px;
+  }
 }
 
 .fashion-blog__card-options-item:not(:last-child)::after {
@@ -3579,6 +3933,12 @@ button {
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+}
+
+@media (max-width: 560px) {
+  .fashion-blog__card-options-item:not(:last-child)::after {
+    right: -7px;
+  }
 }
 
 .fashion-blog__card-options-item.comments {
@@ -3601,14 +3961,23 @@ button {
 }
 
 .fashion-blog__card-text {
-  max-height: 55px;
   font-size: 16px;
   line-height: 1.6;
   color: #1E212C;
-  -o-text-overflow: ellipsis;
-  text-overflow: ellipsis;
-  overflow: hidden;
   margin: 0;
+}
+
+@media (max-width: 990px) {
+  .fashion-blog__card-text {
+    max-height: auto;
+  }
+}
+
+@media (max-width: 560px) {
+  .fashion-blog__card-text {
+    font-size: 14px;
+    line-height: 1.4;
+  }
 }
 
 /*----------------brands-block---------------*/

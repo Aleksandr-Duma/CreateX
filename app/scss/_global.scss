@@ -143,6 +143,10 @@ button{
 	display: flex;
 	align-items: center;
 
+	@media (max-width: 560px){
+		justify-content: center;
+	}
+
 	&__link{
 		width: 162px;
 		height: 48px;
@@ -152,6 +156,12 @@ button{
 		background-size: cover;
 		transition: opacity .2s ease;
 
+		@media (max-width: 460px){
+			width: 130px;
+			height: 40px;
+			border-radius: 3px;
+		}
+
 		&:hover{
 			opacity: 0.6;
 		}
@@ -160,6 +170,10 @@ button{
 	&__link.apple{
 		background-image: url(../img/icons/app-store.svg);
 		margin-right: 25px;
+
+		@media (max-width: 990px){
+			margin-right: 10px;
+		}
 	}
 
 	&__link.google{

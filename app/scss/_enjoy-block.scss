@@ -2,9 +2,20 @@
 .enjoy-block{
 	background: linear-gradient(180deg, #fff 9.5%, $main-black 9.5% 90%);
 
+	@media (max-width: 768px){
+		background: linear-gradient(180deg, #fff 5%, $main-black 5% 90%);
+	}
+
 	&__container{
 		display: flex;
 		justify-content: space-between;
+		padding: 0 0 0 0;
+
+		@media (max-width: 768px){
+			flex-direction: column;
+			align-items: center;
+			padding: 0 0 0 0;
+		}
 	}
 
 	&__image{
@@ -12,15 +23,46 @@
 		height: 330px;
 		background-image: url(../img/bg/enjoy-block-bg.png);
 		background-repeat: no-repeat;
-		background-position: center;
+		background-position: right top;
 		background-size: cover;
-		margin-left: -28px;
+		margin: 0 0 0 -28px;
+
+		@media (max-width: 1180px){
+			width: 50%;
+		}
+
+		@media (max-width: 990px){
+			height: 300px;
+		}
+
+		@media (max-width: 990px){
+			width: 100%;
+			margin: 0 0 0 0;
+		}
+
+		@media (max-width: 560px){
+			height: 250px;
+		}
 	}
 
 	&__content{
 		width: 50%;
 		height: 300px;
-		padding: 93px 0 0 10px;
+		padding: 93px 15px 0 10px;
+
+		@media (max-width: 990px){
+			width: 100%;
+			height: auto;
+			padding: 93px 15px 40px 30px;
+		}
+
+		@media (max-width: 768px){
+			padding: 50px 15px 40px 15px;
+		}
+
+		@media (max-width: 560px){
+			text-align: center;
+		}
 	}
 
 	&__title{
@@ -29,5 +71,14 @@
 		line-height: 1.3;
 		color: #fff;
 		margin: 0 0 45px 0;
+
+		@media (max-width: 990px){
+			font-size: 26px;
+			margin: 0 0 25px 0;
+		}
+
+		@media (max-width: 560px){
+			font-size: 22px;
+		}
 	}
 }

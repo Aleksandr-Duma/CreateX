@@ -2,6 +2,14 @@
 .fashion-blog{
 	padding: 125px 0 100px 0;
 
+	@media (max-width: 1280px){
+		padding: 80px 0 70px 0;
+	}
+
+	@media (max-width: 560px){
+		padding: 50px 0 50px 0;
+	}
+
 	&__container{ 
 		padding: 0 20px;
 	}
@@ -11,6 +19,22 @@
 		justify-content: space-between;
 		align-items: flex-end;
 		margin-bottom: 58px;
+
+		@media (max-width: 990px){
+			margin-bottom: 30px;
+		}
+
+		@media (max-width: 560px){
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+
+	&__title{
+
+		@media (max-width: 560px){
+			margin-bottom: 10px;
+		}
 	}
 
 	&__link{
@@ -22,6 +46,11 @@
 	&__content{
 		display: flex;
 		justify-content: space-between;
+
+		@media (max-width: 990px){
+			flex-direction: column;
+			align-items: center;
+		}
 	}
 
 	&__card{
@@ -32,21 +61,35 @@
 		0px 12px 10px -6px rgba(154, 156, 165, 0.08), 
 		0px 4px 4px -4px rgba(30, 33, 44, 0.05);
 
+		@media (max-width: 990px){
+			width: 100%;
+			margin-bottom: 15px;
+		}
+
 		&-picture{
 			width: 100%;
 			height: 306px;
 			border-radius: 4px 4px 0 0;
 			overflow: hidden;
+
+			@media (max-width: 560px){
+				height: 210px;
+			}
 		}
 
 		&-img{
 			display: block;
 			width: 100%;
+			height: 100%;
 			object-fit: cover;
 		}
 
 		&-description{
 			padding: 25px 20px 20px 25px;
+
+			@media (max-width: 560px){
+				padding: 15px 15px 15px 15px;
+			}
 		}
 
 		&-title{
@@ -58,6 +101,12 @@
 			margin: 0 0 12px 0;
 			transition: color .2s ease;
 
+			@media (max-width: 560px){
+				font-size: 16px;
+				line-height: 1.3;
+				margin: 0 0 8px 0;
+			}
+
 			&:hover{
 				color: $main-green;
 			}
@@ -66,6 +115,10 @@
 		&-options{
 			display: flex;
 			margin-bottom: 17px;
+
+			@media (max-width: 560px){
+				margin-bottom: 10px;
+			}
 		}
 
 		&-options-item{
@@ -75,6 +128,12 @@
 			color: $grey-text;
 			position: relative;
 			margin-right: 25px;
+
+			@media (max-width: 560px){
+				font-size: 10px;
+
+				margin-right: 15px;
+			}
 
 			&:not(:last-child)::after{
 				content: "";
@@ -86,6 +145,10 @@
 				top: 50%;
 				right: -15px; 
 				transform: translateY(-50%);
+
+				@media (max-width: 560px){
+					right: -7px;
+				}
 			}
 		}
 
@@ -107,13 +170,19 @@
 		}
 
 		&-text{
-			max-height: 55px;
 			font-size: 16px;
 			line-height: 1.6;
 			color: $main-black;
-			text-overflow: ellipsis;
-			overflow: hidden;
 			margin: 0;
+
+			@media (max-width: 990px){
+				max-height: auto;
+			}
+
+			@media (max-width: 560px){
+				font-size: 14px;
+				line-height: 1.4;
+			}
 		}
 	}
 }
