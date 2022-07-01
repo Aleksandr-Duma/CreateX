@@ -7,9 +7,37 @@
 		display: flex;
 		justify-content: space-between;
 		padding: 65px 35px 30px 15px;
+
+		// border: 1px solid red;
+
+		// flex-wrap: wrap;
+
+		// @media (max-width: 1180px){
+		// 	padding: 35px 15px 10px 15px;
+		// }
+
+		// @media (max-width: 990px){
+		// 	justify-content: center;
+		// 	flex-wrap: wrap;
+		// }
 	}
 
 	&__column{
+		// border: 1px solid green;
+		margin-bottom: 10px;
+
+		// @media (max-width: 1180px){
+		// 	&:not(:last-child){
+		// 		width: 20%;
+		// 	}
+			
+		// }
+
+		// @media (max-width: 990px){
+		// 	&:not(:last-child){
+		// 		margin-right: 30px;
+		// 	}
+		// }
 
 		&-title{
 			text-transform: uppercase;
