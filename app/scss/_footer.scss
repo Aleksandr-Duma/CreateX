@@ -1,6 +1,6 @@
 /*-------------------footer------------------*/
 .footer{
-	background-color: $main-black;
+	background-color: var(--main-black);
 	margin-top: auto;
 
 	&__container{
@@ -77,6 +77,9 @@
 		letter-spacing: 1px;
 		color: #fff;
 		margin: 0 0 18px 0;
+	}
+
+	&__item-title.contacts{
 
 		@media (max-width: 640px){
 			text-align: center;
@@ -89,6 +92,10 @@
 		@media (max-width: 1180px){
 			margin: 0 0 18px 0;
 		}
+
+		@media (max-width: 640px){
+			text-align: center;
+		}
 	}
 
 	&__list{
@@ -98,16 +105,12 @@
 
 		&-item{
 			margin-bottom: 11px;
-
-			@media (max-width: 640px){
-				text-align: center;
-			}
 		}
 
 		&-link{
 			font-size: 16px;
 			line-height: 1.2;
-			color: $grey-text;
+			color: var(--grey-text);
 
 			&:hover{
 				text-decoration: underline;
@@ -136,10 +139,10 @@
 			width: 32px;
 			height: 32px;
 			border-radius: 4px;
-			background-color: #393C45;
+			background-color: var(--dark-grey);
 			background-repeat: no-repeat;
 			background-position: center;
-			transition: background .2s ease;
+			transition: background .1s ease;
 
 			&:not(:last-child){
 				margin-right: 12px;
@@ -188,7 +191,7 @@
 	}
 
 	&__copy{
-		border-top: 1px solid #40424C;
+		border-top: 1px solid var(--dark-grey);
 		
 		&-container{
 			display: flex;
@@ -233,7 +236,7 @@
 			font-weight: 700;
 			font-size: 16px;
 			line-height: 1.6;
-			color: $grey-text;
+			color: var(--grey-text);
 			transition: color .2s ease;
 			
 			@media (max-width: 560px){

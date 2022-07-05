@@ -36,7 +36,7 @@
 		font-size: 16px;
 		line-height: 1.5;
 		letter-spacing: 1px;
-		color: $main-black;
+		color: var(--main-black);
 		margin: 0 0 13px 0;
 
 		@media (max-width: 990px){
@@ -110,7 +110,7 @@
 	&__preview-item{
 		width: 260px;
 		height: 260px;
-		background-color: $main-black;
+		background-color: var(--main-black);
 		overflow: hidden;
 		margin: 0 0 0 15px;
 

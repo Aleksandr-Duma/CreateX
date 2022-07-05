@@ -36,7 +36,7 @@
 	&__subtitle{
 		font-size: 18px;
 		line-height: 1.2;
-		color: $grey-text;
+		color: var(--grey-text);
 		text-align: center;
 		margin-bottom: 5px;
 
@@ -50,7 +50,7 @@
 		text-decoration: underline; 
 		font-size: 18px;
 		line-height: 1.2;
-		color: $main-green;
+		color: var(--main-green);
 
 		@media (max-width: 990px){
 			font-size: 16px;
@@ -90,7 +90,7 @@
 					height: 3px;
 					font-size: 0;
 					border-radius: 5px;
-					background-color: $grey-text;
+					background-color: var(--grey-text);
 					border: none;
 					outline: none;
 					padding: 0;
@@ -105,7 +105,7 @@
 			li.slick-active{
 
 				button{
-					background-color: $dark-grey;
+					background-color: var(--dark-grey);
 				}
 			}
 		}

@@ -97,7 +97,7 @@
 			font-weight: 700;
 			font-size: 20px;
 			line-height: 1.5;
-			color: $main-black;
+			color: var(--main-black);
 			margin: 0 0 12px 0;
 			transition: color .2s ease;
 
@@ -108,7 +108,7 @@
 			}
 
 			&:hover{
-				color: $main-green;
+				color: var(--main-green);
 			}
 		}
 
@@ -125,7 +125,7 @@
 			font-weight: 400;
 			font-size: 14px;
 			line-height: 1.5;
-			color: $grey-text;
+			color: var(--grey-text);
 			position: relative;
 			margin-right: 25px;
 
@@ -140,7 +140,7 @@
 				display: block;
 				width: 1px;
 				height: 13px;
-				background-color: $grey-text;
+				background-color: var(--grey-text);
 				position: absolute;
 				top: 50%;
 				right: -15px; 
@@ -172,7 +172,7 @@
 		&-text{
 			font-size: 16px;
 			line-height: 1.6;
-			color: $main-black;
+			color: var(--main-black);
 			margin: 0;
 
 			@media (max-width: 990px){

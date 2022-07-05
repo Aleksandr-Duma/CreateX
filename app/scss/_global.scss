@@ -15,7 +15,7 @@ body{
 	font-family: 'Lato', sans-serif;
 	font-weight: 400;
 	font-size: 16px;
-	color: $main-black;
+	color: var(--main-black);
 	background-color: #fff;
 }
 
@@ -76,7 +76,7 @@ button{
 }
 
 .grey-text{
-	color: $grey-text;
+	color: var(--grey-text);
 }
 
 .title{
@@ -104,9 +104,9 @@ button{
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
-	color: $main-green;
+	color: var(--main-green);
 	border-radius: 4px;
-	border: 1px solid $main-green;
+	border: 1px solid var(--main-green);
 	padding: 18px 40px 16px 40px;
 	transition: background .2s ease;
 
@@ -116,7 +116,7 @@ button{
 	}
 
 	&:hover{
-		background-color: $main-green;
+		background-color: var(--main-green);
 		color: #fff;
 	}
 
@@ -129,12 +129,12 @@ button{
 	}
 
 	&.active{
-		background-color: $main-green;
+		background-color: var(--main-green);
 		color: #fff;
 
 		&:hover{
 			background-color: transparent;
-			color: $main-green;
+			color: var(--main-green);
 		}
 	}
 }

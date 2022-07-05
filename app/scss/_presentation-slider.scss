@@ -37,7 +37,7 @@
 		}
 
 		&:hover{
-			background-color: $main-green;
+			background-color: var(--main-green);
 			background-image: url(../img/icons/slider-banner-arrow-left-white.svg);
 		}
 	}
@@ -51,7 +51,7 @@
 		}
 
 		&:hover{
-			background-color: $main-green;
+			background-color: var(--main-green);
 			background-image: url(../img/icons/slider-banner-arrow-right-white.svg);
 		}
 	}

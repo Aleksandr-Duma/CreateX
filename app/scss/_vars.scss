@@ -1,6 +1,23 @@
-$main-black: #1E212C;
-$main-green: #17696A;
-$accent-red: #FF4242;
-$dark-grey: #424551;
-$grey-text: #8F9096;
-$light-grey-bg: #F4F5F6;
+:root{
+	--main-black: #1E212C;
+	--main-green: #17696A;
+	--accent-red: #FF4242;
+	--dark-grey: #424551;
+	--grey-text: #8F9096;
+	--light-grey-bg: #F4F5F6;
+
+	// Marquee logo brands
+	--marquee-width: 100%;
+	--marquee-elements: 6;
+	--marquee-elements-displayed: 6;
+	--marquee-element-width: calc(var(--marquee-width) / var(--marquee-elements-displayed));
+	--marquee-animation-duration: calc(var(--marquee-elements) * 4s);
+
+	@media (max-width: 990px){
+		--marquee-elements-displayed: 4;
+	}
+
+	@media (max-width: 560px){
+		--marquee-elements-displayed: 3; 
+	}
+}

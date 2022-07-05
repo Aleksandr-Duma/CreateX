@@ -156,6 +156,18 @@ menuItem.forEach(item => {
 	});
 });
 
+/*------------------Marquee logo brands--------------------*/
+
+const root = document.documentElement;
+const marquieElementsDisplay = getComputedStyle(root).getPropertyValue('--marquee-elements-displayed');
+const marqueeContent = document.querySelector('.marquee__content');
+
+root.style.setProperty('--marquee-elements', marqueeContent.children.length);
+
+for (let i = 0; i < marquieElementsDisplay; i++) {
+	marqueeContent.appendChild(marqueeContent.children[i].cloneNode(true));
+}
+
 $(function(){
 
 /*----------------------banner-slider----------------------*/

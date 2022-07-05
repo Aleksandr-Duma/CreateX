@@ -1,9 +1,9 @@
 /*------------------enjoy-block--------------*/
 .enjoy-block{
-	background: linear-gradient(180deg, #fff 9.5%, $main-black 9.5% 90%);
+	background: linear-gradient(180deg, #fff 9.5%, var(--main-black) 9.5% 90%);
 
 	@media (max-width: 768px){
-		background: linear-gradient(180deg, #fff 5%, $main-black 5% 90%);
+		background: linear-gradient(180deg, #fff 5%, var(--main-black) 5% 90%);
 	}
 
 	&__container{
