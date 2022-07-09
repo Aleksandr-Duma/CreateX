@@ -1,0 +1,125 @@
+/*--------------language-select--------------*/
+.select-wrap{
+	position: relative;
+
+	.language-select{
+		font-size: 14px;
+		line-height: 1.5;
+		color: var(--grey-text);
+		white-space: nowrap;
+		background-color: transparent;
+		display: flex;
+		align-items: center;
+		transition: color .2s ease;
+		padding: 5px 20px 5px 10px;
+
+		@media (max-width: 640px){
+			padding: 5px 5px 5px 5px;
+		}
+
+		&::after{
+			content:"";
+			width: 10px;
+			height: 10px;
+			background-image: url(../img/icons/header-select-arrow.svg);
+			background-repeat: no-repeat;
+			background-position: center center;
+			position: absolute;
+			top: 50%;
+			right: 5px;
+			transform: translateY(-50%);
+			pointer-events: none;
+
+			@media (max-width: 640px){
+				display: none;
+			}
+		}
+
+		&:hover{
+			color: #fff;
+		}
+
+		&-img{
+			display: block;
+			width: 20px;
+			margin-right: 10px;
+			pointer-events: none;
+
+			@media (max-width: 640px){
+				margin-right: 0;
+			}
+		}
+
+		&-list{
+			width: 100%;
+			border-radius: 0px 0px 4px 4px;
+			box-shadow: 0px 2px 10px 2px rgba(var(--main-black), 0.2);
+			z-index: 15;
+
+			@media (max-width: 640px){
+				width: auto;
+			}
+		}
+
+		&-list-item{
+			font-size: 14px;
+			line-height: 1.5;
+			color: var(--main-black);
+			white-space: nowrap;
+			background-color: #fff;
+			display: flex;
+			align-items: center;
+			cursor: pointer;
+			padding: 5px 20px 5px 10px;
+			transition: background-color .2s ease;
+
+			@media (max-width: 640px){
+				padding: 5px 5px 5px 5px;
+			}
+
+			&:last-child{
+				padding-bottom: 10px;
+			}
+
+			&:hover{
+				background-color: #D3D3D3;
+			}
+		}
+
+		&__text{
+			pointer-events: none;
+
+			@media (max-width: 640px){
+				display: none;
+			}
+		}
+	}
+}
+
+.select{
+	position: relative;
+	display: block;
+}
+
+.select:focus, .active{
+	outline: none;
+}
+
+.select-list{
+	list-style-type: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	overflow: hidden;
+	padding: 0;
+	margin: 0;
+	display: none;
+}
+
+.select-list.visible{
+	display: block;
+}
+
+.input-hidden{
+	display: none;
+}

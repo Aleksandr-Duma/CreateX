@@ -1,0 +1,143 @@
+/*-----------------header-top----------------*/
+.header-top{
+	background-color: var(--main-black);
+
+	&__container{
+		min-height: 44px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		@media (max-width: 640px){
+			min-height: 35px;
+		}
+	}
+
+	&__contacts{
+
+		@media (max-width: 990px){
+			display: none;
+		}
+
+		&-text{
+			font-size: 14px;
+			line-height: 1.5; 
+			color: var(--grey-text);
+		}
+
+		&-link{
+			font-weight: 700;
+			color: var(--grey-text);
+			transition: color .2s ease;
+
+			&:hover{
+				color: #fff;
+			}
+		}
+	}
+
+	&__list{
+		list-style: none;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 0;
+		margin: 0;
+
+		@media (max-width: 460px){
+			margin-right: 5px;
+		}
+
+		&-item{
+			margin: 0 16px;
+
+			@media (max-width: 990px){
+				margin: 0 8px;
+			}
+
+			@media (max-width: 460px){
+				margin: 0 3px;
+			}
+		}
+
+		&-link{
+			font-size: 14px;
+			line-height: 1.5;
+			color: var(--grey-text);
+			white-space: nowrap;
+			border-bottom: 1px solid transparent;
+			transition: color .2s ease;
+
+			&:hover{
+				color: #fff;
+			}
+
+			@media (max-width: 460px){
+				font-size: 11px;
+			}
+		}
+	}
+
+	&__settings{
+		display: flex;
+		align-items: center;
+
+		&-button{
+			font-size: 14px;
+			line-height: 1.5;
+			color: var(--grey-text);
+			white-space: nowrap;
+			background-color: transparent;
+			border: none;
+			outline: none;
+			position: relative;
+			transition: color .2s ease;
+			padding: 5px 10px 5px 30px;
+			margin-left: 48px;
+
+			@media (max-width: 990px){
+				margin-left: 15px;
+			}
+
+			@media (max-width: 640px){
+				width: 25px;
+				height: 25px;
+				border-radius: 50%;
+				padding: 0;
+				border: 1px solid var(--grey-text);
+			}
+
+			@media (max-width: 460px){
+				margin-left: 5px;
+			}
+
+			&::before{
+				content: "";
+				width: 20px;
+				height: 20px;
+				background-image: url(../img/icons/icon-user-header.svg);
+				background-repeat: no-repeat;
+				background-position: center;
+				position: absolute;
+				top: 50%;
+				left: 5px;
+				transform: translateY(-50%);
+
+				@media (max-width: 640px){
+					left: 50%;
+					transform: translate(-50%, -50%);
+				}
+			}
+
+			&:hover{
+				color: #fff;
+			}
+
+			&-text{
+				@media (max-width: 640px){
+					display: none;
+				}
+			}
+		}
+	}
+}
