@@ -3,7 +3,16 @@
 @import "libs";
 @import "fonts";
 @import "global";
+// Components
 @import "components/language-select";
+@import "components/product-card";
+@import "components/product-card-large";
+@import "components/primary-link";
+@import "components/mobile-app";
+@import "components/timer";
+@import "components/subscribe-category";
+@import "components/subscribe-checkbox";
+// Sections
 @import "header";
 @import "header-top";
 @import "header-main";
@@ -11,7 +20,6 @@
 @import "top-banner";
 @import "top-categories";
 @import "arrivals";
-@import "product-card";
 @import "promo";
 @import "popular";
 @import "presentation-slider";
@@ -22,7 +30,6 @@
 @import "instagram-block";
 @import "fashion-blog";
 @import "brands-block";
-
 @import "subscribe";
 @import "footer";
 

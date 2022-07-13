@@ -94,12 +94,12 @@
 				padding: 10px 15px;
 			}
 
-			&:hover > .header__main-list-link{
+			&:hover > .header-main__list-span{
 				color: var(--main-green);
 			}
 		}
 
-		&-link{
+		&-span{
 			display: inline-block;
 			font-weight: 700;
 			font-size: 16px;
@@ -129,7 +129,7 @@
 			}
 		}
 
-		&-link.open{
+		&-span.open{
 
 			@media (max-width: 990px){
 

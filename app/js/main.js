@@ -111,7 +111,7 @@ const burger = document.querySelector('.burger');
 const buttonClose = document.querySelector('.menu-close__button');
 const mobileMenu = document.querySelector('.header-main__navigation');
 const menuItem = document.querySelectorAll('.header-main__list-item');
-const menuLink = document.querySelectorAll('.header-main__list-link');
+const menuLink = document.querySelectorAll('.header-main__list-span');
 const subMenu = document.querySelectorAll('.sub-menu');
 const overlay = document.querySelector('.overlay');
 
@@ -178,7 +178,6 @@ if (isMobile.any()){
 
 	menuLink.forEach(link => {
 		link.addEventListener('click', (e) => {
-			e.preventDefault();
 			e.target.nextElementSibling.classList.toggle('open');
 
 			if (e.target.nextElementSibling.classList.contains('open')) {

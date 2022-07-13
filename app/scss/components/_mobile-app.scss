@@ -1,0 +1,38 @@
+/*-----------------mobile-app----------------*/
+.mobile-app{
+	display: flex;
+	align-items: center;
+
+	&__link{
+		width: 162px;
+		height: 48px;
+		border-radius: 4px;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		transition: opacity .2s ease;
+
+		@media (max-width: 460px){
+			width: 130px;
+			height: 40px;
+			border-radius: 3px;
+		}
+
+		&:hover{
+			opacity: 0.6;
+		}
+	}
+
+	&__link.apple{
+		background-image: url(../img/icons/app-store.svg);
+		margin-right: 23px;
+
+		@media (max-width: 990px){
+			margin-right: 10px;
+		}
+	}
+
+	&__link.google{
+		background-image: url(../img/icons/google-play.svg);
+	}
+}

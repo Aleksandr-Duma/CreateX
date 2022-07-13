@@ -116,60 +116,35 @@
 
 	&__item{
 		height: calc(102.5vh - 162px);
-		background-repeat: no-repeat;
-		background-position: center;
-		background-size: cover;
+		position: relative;
 
 		@media (max-width: 990px){
 			height: calc(102.5vh - 132px);
 			min-height: 500px;
-			background-position: 60% center; 
 		}
 
 		@media (max-width: 768px){
 			height: calc(102.5vh - 120px);
-			background-position: center top;
 		}
-	}
 
-	&__item.man{
-		background-image: url(../img/bg/banner-slide-img-1.jpg);
-
-		@media (max-width: 768px){
-			background-image: url(../img/bg/banner-slide-mobile-img-1.jpg);
-		}
-	}
-
-	&__item.woman{
-		background-image: url(../img/bg/banner-slide-img-2.jpg);
-
-		@media (max-width: 768px){
-			background-image: url(../img/bg/banner-slide-mobile-img-2.jpg);
-		}
-	}
-
-	&__item.boys{
-		background-image: url(../img/bg/banner-slide-img-3.jpg);
-
-		@media (max-width: 768px){
-			background-image: url(../img/bg/banner-slide-mobile-img-3.jpg);
-		}
-	}
-
-	&__item.girls{
-		background-image: url(../img/bg/banner-slide-img-4.jpg);
-
-		@media (max-width: 768px){
-			background-image: url(../img/bg/banner-slide-mobile-img-4.jpg);
+		&-img{
+			object-fit: cover;
+			height: 100%;
 		}
 	}
 
 	&__container{
+		width: 100%;
 		min-height: 100%;
 		display: flex;
 		flex-direction: column;
 		justify-content: flex-start;
 		align-items: flex-start;
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		z-index: 20;
 		padding: 140px 0 0 15px;
 
 		@media (max-width: 990px){

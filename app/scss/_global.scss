@@ -21,7 +21,7 @@ body{
 
 img{
 	display: block;
-	width: 100%;
+	max-width: 100%;
 	height: auto; 
 }
 
@@ -95,88 +95,3 @@ button{
 	}
 }
 
-.primary-link{
-	display: inline-block;
-	font-weight: 700;
-	font-size: 16px;
-	line-height: 1;
-	letter-spacing: 0.2px;
-	white-space: nowrap;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	color: var(--main-green);
-	border-radius: 4px;
-	border: 1px solid var(--main-green);
-	padding: 18px 40px 16px 40px;
-	transition: background .2s ease;
-
-	@media (max-width: 640px){
-		font-size: 13px;
-		padding: 14px 26px 12px 26px;
-	}
-
-	&:hover{
-		background-color: var(--main-green);
-		color: #fff;
-	}
-
-	&.sale{
-		margin-right: 25px;
-
-		@media (max-width: 640px){
-			margin-right: 10px;
-		}
-	}
-
-	&.active{
-		background-color: var(--main-green);
-		color: #fff;
-
-		&:hover{
-			background-color: transparent;
-			color: var(--main-green);
-		}
-	}
-}
-
-.mobile-app{
-	display: flex;
-	align-items: center;
-
-	@media (max-width: 560px){
-		justify-content: center;
-	}
-
-	&__link{
-		width: 162px;
-		height: 48px;
-		border-radius: 4px;
-		background-repeat: no-repeat;
-		background-position: center;
-		background-size: cover;
-		transition: opacity .2s ease;
-
-		@media (max-width: 460px){
-			width: 130px;
-			height: 40px;
-			border-radius: 3px;
-		}
-
-		&:hover{
-			opacity: 0.6;
-		}
-	}
-
-	&__link.apple{
-		background-image: url(../img/icons/app-store.svg);
-		margin-right: 23px;
-
-		@media (max-width: 990px){
-			margin-right: 10px;
-		}
-	}
-
-	&__link.google{
-		background-image: url(../img/icons/google-play.svg);
-	}
-}

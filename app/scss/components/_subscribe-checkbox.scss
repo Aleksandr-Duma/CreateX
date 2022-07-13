@@ -1,0 +1,35 @@
+/*-------------subscribe-checkbox------------*/
+.subscribe__checkbox {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+}
+
+.subscribe__checkbox-label{
+	font-size: 16px;
+	line-height: 1;
+	display: inline-flex;
+	align-items: center;
+	user-select: none;
+
+	@media (max-width: 990px){
+		font-size: 14px;
+	}
+}
+
+.subscribe__checkbox-label::before {
+	content: '';
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	border-radius: 3px;
+	border: 1px solid var(--main-green);
+	margin-right: 13px;
+}
+
+.subscribe__checkbox:checked + .subscribe__checkbox-label::before {
+	background-color: var(--main-green);
+	background-image: url(../img/icons/subscribe-check-icon-white.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+}

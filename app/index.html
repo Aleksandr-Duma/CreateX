@@ -10,7 +10,7 @@
 <body>
 	<div class="wrapper">
 		<header class="header">
-			<div class="header-top">
+			<div class="header__top header-top">
 				<div class="container header-top__container">
 					<div class="header-top__contacts">
 						<span class="header-top__contacts-text">Available 24/7 at 
@@ -59,7 +59,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="header-main">
+			<div class="header__main header-main">
 				<div class="container header-main__container">
 					<div class="header-main__left">
 						<a href="#" class="logo">
@@ -69,7 +69,7 @@
 							<button class="menu-close__button">&times;</button>
 							<ul class="header-main__list">
 								<li class="header-main__list-item">
-									<a href="" class="header-main__list-link">Women</a>
+									<span class="header-main__list-span">Women</span>
 									<div class="sub-menu">
 										<div class="container sub-menu__container">
 											<div class="sub-menu__item offer">
@@ -213,7 +213,7 @@
 									</div>
 								</li>
 								<li class="header-main__list-item">
-									<a href="" class="header-main__list-link">Men</a>
+									<span class="header-main__list-span">Men</span>
 									<div class="sub-menu">
 										<div class="container sub-menu__container">
 											<div class="sub-menu__item offer">
@@ -325,10 +325,9 @@
 											</div>
 										</div> 
 									</div>
-
 								</li>
 								<li class="header-main__list-item">
-									<a href="" class="header-main__list-link">Girls</a>
+									<span class="header-main__list-span">Girls</span>
 									<div class="sub-menu">
 										<div class="container sub-menu__container">
 											<div class="sub-menu__item offer">
@@ -437,10 +436,9 @@
 											</div>
 										</div>
 									</div>
-
 								</li>
 								<li class="header-main__list-item">
-									<a href="" class="header-main__list-link">Boys</a>
+									<span class="header-main__list-span">Boys</span>
 									<div class="sub-menu">
 										<div class="container sub-menu__container">
 											<div class="sub-menu__item offer">
@@ -539,7 +537,7 @@
 									</div>
 								</li>
 								<li class="header-main__list-item">
-									<a href="" class="header-main__list-link sale">Sale</a>
+									<span class="header-main__list-span sale">Sale</span>
 									<div class="sub-menu">
 										<div class="container sub-menu__container">
 											<div class="sub-menu__item offer">
@@ -653,7 +651,11 @@
 			<div class="overlay"></div>
 			<section class="top-banner">
 				<div class="banner-slider">
-					<div class="banner-slider__item man">
+					<div class="banner-slider__item">
+						<picture>
+							<source srcset="img/bg/banner-slide-mobile-img-1.jpg" media="(max-width: 768px)" type="image/png">
+							<img class="banner-slider__item-img" src="img/bg/banner-slide-img-1.jpg" alt="logo">
+						</picture>
 						<div class="container banner-slider__container">
 							<span class="banner-slider__suptitle">New collection</span>
 							<h2 class="banner-slider__title">Menswear 2020</h2>
@@ -663,7 +665,11 @@
 							</div>
 						</div>
 					</div>
-					<div class="banner-slider__item woman">
+					<div class="banner-slider__item">
+						<picture>
+							<source srcset="img/bg/banner-slide-mobile-img-2.jpg" media="(max-width: 768px)" type="image/png">
+							<img class="banner-slider__item-img" src="img/bg/banner-slide-img-2.jpg" alt="logo">
+						</picture>
 						<div class="container banner-slider__container">
 							<span class="banner-slider__suptitle">New collection</span>
 							<h2 class="banner-slider__title">Womenswear 2020</h2>
@@ -673,7 +679,11 @@
 							</div>
 						</div>
 					</div>
-					<div class="banner-slider__item boys">
+					<div class="banner-slider__item">
+						<picture>
+							<source srcset="img/bg/banner-slide-mobile-img-3.jpg" media="(max-width: 768px)" type="image/png">
+							<img class="banner-slider__item-img" src="img/bg/banner-slide-img-3.jpg" alt="logo">
+						</picture>
 						<div class="container banner-slider__container">
 							<span class="banner-slider__suptitle">New collection</span>
 							<h2 class="banner-slider__title">Boyswear 2020</h2>
@@ -683,7 +693,11 @@
 							</div>
 						</div>
 					</div>
-					<div class="banner-slider__item girls">
+					<div class="banner-slider__item">
+						<picture>
+							<source srcset="img/bg/banner-slide-mobile-img-4.jpg" media="(max-width: 768px)" type="image/png">
+							<img class="banner-slider__item-img" src="img/bg/banner-slide-img-4.jpg" alt="logo">
+						</picture>
 						<div class="container banner-slider__container">
 							<span class="banner-slider__suptitle">New collection</span>
 							<h2 class="banner-slider__title">Girlswear 2020</h2>
@@ -700,19 +714,19 @@
 				<div class="top-categories__content">
 					<div class="top-categories__card">
 						<div class="top-categories__card-picture">
-							<img class="top-categories__card-img" src="img/bg/category-women-bg.jpg" alt="women">
+							<img class="top-categories__card-img" src="img/bg/category-women-bg.jpg" alt="Woman with sunglasses">
 						</div>
 						<div class="top-categories__card-description">Women’s</div>
 					</div>
 					<div class="top-categories__card">
 						<div class="top-categories__card-picture">
-							<img class="top-categories__card-img" src="img/bg/category-man-bg.jpg" alt="man">
+							<img class="top-categories__card-img" src="img/bg/category-man-bg.jpg" alt="Man with sunglasses">
 						</div>
 						<div class="top-categories__card-description">Men’s</div>
 					</div>
 					<div class="top-categories__card">
 						<div class="top-categories__card-picture">
-							<img class="top-categories__card-img" src="img/bg/category-kids-bg.jpg" alt="kids">
+							<img class="top-categories__card-img" src="img/bg/category-kids-bg.jpg" alt="Girl with jackets">
 						</div>
 						<div class="top-categories__card-description">Kids’</div>
 					</div>
@@ -730,7 +744,7 @@
 							<div class="product-card__raiting rating-5"></div>
 							<div class="product-card__favorite"></div>
 							<a href="" class="product-card__picture">
-								<img class="product-card__img" src="img/products/product-1.jpg" alt="product-1">
+								<img class="product-card__img" src="img/products/product-1.jpg" alt="Sport cap">
 							</a>
 							<div class="product-card__description">
 								<a href="" class="product-card__title">Black and white sport cap</a>
@@ -742,7 +756,7 @@
 						<div class="product-card">
 							<div class="product-card__favorite"></div>
 							<a href="" class="product-card__picture">
-								<img class="product-card__img" src="img/products/product-2.jpg" alt="product-2">
+								<img class="product-card__img" src="img/products/product-2.jpg" alt="Metal bridge sunglasses">
 							</a>
 							<div class="product-card__description">
 								<a href="" class="product-card__title">Metal bridge sunglasses</a>
@@ -755,7 +769,7 @@
 							<div class="product-card__raiting rating-4"></div>
 							<div class="product-card__favorite"></div>
 							<a href="" class="product-card__picture">
-								<img class="product-card__img" src="img/products/product-3.jpg" alt="product-3">
+								<img class="product-card__img" src="img/products/product-3.jpg" alt="Green baby romper">
 							</a>
 							<div class="product-card__description">
 								<a href="" class="product-card__title">Green baby romper</a>
@@ -767,7 +781,7 @@
 						<div class="product-card">
 							<div class="product-card__favorite"></div>
 							<a href="" class="product-card__picture">
-								<img class="product-card__img" src="img/products/product-4.jpg" alt="product-4">
+								<img class="product-card__img" src="img/products/product-4.jpg" alt="slim cropped fit jeans">
 							</a>
 							<div class="product-card__description">
 								<a href="" class="product-card__title">Mid-rise slim cropped fit jeans</a>
@@ -780,7 +794,7 @@
 							<div class="product-card__raiting rating-5"></div>
 							<div class="product-card__favorite"></div>
 							<a href="" class="product-card__picture">
-								<img class="product-card__img" src="img/products/product-5.jpg" alt="product-5">
+								<img class="product-card__img" src="img/products/product-5.jpg" alt="Red dangle earrings">
 							</a>
 							<div class="product-card__description">
 								<a href="" class="product-card__title">Red dangle earrings</a>
@@ -792,7 +806,7 @@
 						<div class="product-card">
 							<div class="product-card__favorite"></div>
 							<a href="" class="product-card__picture">
-								<img class="product-card__img" src="img/products/product-6.jpg" alt="product-6">
+								<img class="product-card__img" src="img/products/product-6.jpg" alt="Baby shoes">
 							</a>
 							<div class="product-card__description">
 								<a href="" class="product-card__title">Baby shoes with laces</a>
@@ -805,7 +819,7 @@
 							<div class="product-card__raiting rating-5"></div>
 							<div class="product-card__favorite"></div>
 							<a href="" class="product-card__picture">
-								<img class="product-card__img" src="img/products/product-1.jpg" alt="product-1">
+								<img class="product-card__img" src="img/products/product-1.jpg" alt="Sport cap">
 							</a>
 							<div class="product-card__description">
 								<a href="" class="product-card__title">Black and white sport cap</a>
@@ -817,7 +831,7 @@
 						<div class="product-card">
 							<div class="product-card__favorite"></div>
 							<a href="" class="product-card__picture">
-								<img class="product-card__img" src="img/products/product-2.jpg" alt="product-2">
+								<img class="product-card__img" src="img/products/product-2.jpg" alt="Metal bridge sunglasses">
 							</a>
 							<div class="product-card__description">
 								<a href="" class="product-card__title">Metal bridge sunglasses</a>
@@ -830,7 +844,7 @@
 							<div class="product-card__raiting rating-4"></div>
 							<div class="product-card__favorite"></div>
 							<a href="" class="product-card__picture">
-								<img class="product-card__img" src="img/products/product-3.jpg" alt="product-3">
+								<img class="product-card__img" src="img/products/product-3.jpg" alt="Green baby romper">
 							</a>
 							<div class="product-card__description">
 								<a href="" class="product-card__title">Green baby romper</a>
@@ -842,7 +856,7 @@
 						<div class="product-card">
 							<div class="product-card__favorite"></div>
 							<a href="" class="product-card__picture">
-								<img class="product-card__img" src="img/products/product-4.jpg" alt="product-4">
+								<img class="product-card__img" src="img/products/product-4.jpg" alt="Slim cropped fit jeans">
 							</a>
 							<div class="product-card__description">
 								<a href="" class="product-card__title">Mid-rise slim cropped fit jeans</a>
@@ -855,7 +869,7 @@
 							<div class="product-card__raiting rating-5"></div>
 							<div class="product-card__favorite"></div>
 							<a href="" class="product-card__picture">
-								<img class="product-card__img" src="img/products/product-5.jpg" alt="product-5">
+								<img class="product-card__img" src="img/products/product-5.jpg" alt="Red dangle earrings">
 							</a>
 							<div class="product-card__description">
 								<a href="" class="product-card__title">Red dangle earrings</a>
@@ -867,7 +881,7 @@
 						<div class="product-card">
 							<div class="product-card__favorite"></div>
 							<a href="" class="product-card__picture">
-								<img class="product-card__img" src="img/products/product-6.jpg" alt="product-6">
+								<img class="product-card__img" src="img/products/product-6.jpg" alt="Baby shoes">
 							</a>
 							<div class="product-card__description">
 								<a href="" class="product-card__title">Baby shoes with laces</a>
@@ -938,7 +952,7 @@
 					<div class="popular__content">
 						<div class="popular__item">
 							<div class="popular__item-picture">
-								<img class="popular__item-img" src="img/bg/popular-tops-img.jpg" alt="tops-img">
+								<img class="popular__item-img" src="img/bg/popular-tops-img.jpg" alt="Tops image">
 							</div>
 							<div class="popular__item-description">
 								<span class="popular__item-text">Tops</span>
@@ -946,7 +960,7 @@
 						</div>
 						<div class="popular__item">
 							<div class="popular__item-picture">
-								<img class="popular__item-img" src="img/bg/popular-tshirts-img.jpg" alt="tshirts-img">
+								<img class="popular__item-img" src="img/bg/popular-tshirts-img.jpg" alt="T-shirts image">
 							</div>
 							<div class="popular__item-description">
 								<span class="popular__item-text">T-shirts</span>
@@ -954,7 +968,7 @@
 						</div>
 						<div class="popular__item">
 							<div class="popular__item-picture">
-								<img class="popular__item-img" src="img/bg/popular-caps-img.jpg" alt="caps-img">
+								<img class="popular__item-img" src="img/bg/popular-caps-img.jpg" alt="Caps image">
 							</div>
 							<div class="popular__item-description">
 								<span class="popular__item-text">Caps</span>
@@ -962,7 +976,7 @@
 						</div>
 						<div class="popular__item">
 							<div class="popular__item-picture">
-								<img class="popular__item-img" src="img/bg/popular-sandals-img.jpg" alt="sandals-img">
+								<img class="popular__item-img" src="img/bg/popular-sandals-img.jpg" alt="Sandals image">
 							</div>
 							<div class="popular__item-description">
 								<span class="popular__item-text">Sandals</span>
@@ -970,7 +984,7 @@
 						</div>
 						<div class="popular__item">
 							<div class="popular__item-picture">
-								<img class="popular__item-img" src="img/bg/popular-jackets-img.jpg" alt="jackets-img">
+								<img class="popular__item-img" src="img/bg/popular-jackets-img.jpg" alt="Jackets image">
 							</div>
 							<div class="popular__item-description">
 								<span class="popular__item-text">Jackets</span>
@@ -978,7 +992,7 @@
 						</div>
 						<div class="popular__item">
 							<div class="popular__item-picture">
-								<img class="popular__item-img" src="img/bg/popular-coats-img.jpg" alt="coats-img">
+								<img class="popular__item-img" src="img/bg/popular-coats-img.jpg" alt="Coats image">
 							</div>
 							<div class="popular__item-description">
 								<span class="popular__item-text">Coats</span>
@@ -996,7 +1010,7 @@
 								<div class="product-card__raiting rating-5"></div>
 								<div class="product-card__favorite"></div>
 								<a href="" class="product-card__large-picture">
-									<img class="product-card__large-img" src="img/products/product-7.jpg" alt="product-7">
+									<img class="product-card__large-img" src="img/products/product-7.jpg" alt="Shirt with insertion">
 								</a>
 								<div class="product-card__large-description">
 									<a href="" class="product-card__large-title">Shirt with insertion lace trims</a>
@@ -1009,7 +1023,7 @@
 								<div class="product-card__raiting rating-4"></div>
 								<div class="product-card__favorite"></div>
 								<a href="" class="product-card__large-picture">
-									<img class="product-card__large-img" src="img/products/product-8.jpg" alt="product-8">
+									<img class="product-card__large-img" src="img/products/product-8.jpg" alt="Chrono watch">
 								</a>
 								<div class="product-card__large-description">
 									<a href="" class="product-card__large-title">Chrono watch with blue leather belt</a>
@@ -1021,7 +1035,7 @@
 							<div class="product-card__large">
 								<div class="product-card__favorite"></div>
 								<a href="" class="product-card__large-picture">
-									<img class="product-card__large-img" src="img/products/product-9.jpg" alt="product-9">
+									<img class="product-card__large-img" src="img/products/product-9.jpg" alt="Check coat">
 								</a>
 								<div class="product-card__large-description">
 									<a href="" class="product-card__large-title">Check coat with colour contrast</a>
@@ -1034,7 +1048,7 @@
 								<div class="product-card__raiting rating-5"></div>
 								<div class="product-card__favorite"></div>
 								<a href="" class="product-card__large-picture">
-									<img class="product-card__large-img" src="img/products/product-7.jpg" alt="product-7">
+									<img class="product-card__large-img" src="img/products/product-7.jpg" alt="Shirt with insertion">
 								</a>
 								<div class="product-card__large-description">
 									<a href="" class="product-card__large-title">Shirt with insertion lace trims</a>
@@ -1047,7 +1061,7 @@
 								<div class="product-card__raiting rating-4"></div>
 								<div class="product-card__favorite"></div>
 								<a href="" class="product-card__large-picture">
-									<img class="product-card__large-img" src="img/products/product-8.jpg" alt="product-8">
+									<img class="product-card__large-img" src="img/products/product-8.jpg" alt="Chrono watch">
 								</a>
 								<div class="product-card__large-description">
 									<a href="" class="product-card__large-title">Chrono watch with blue leather belt</a>
@@ -1070,7 +1084,7 @@
 								<div class="product-card__raiting rating-5"></div>
 								<div class="product-card__favorite"></div>
 								<a href="" class="product-card__large-picture">
-									<img class="product-card__large-img" src="img/products/product-10.jpg" alt="product-10">
+									<img class="product-card__large-img" src="img/products/product-10.jpg" alt="Leather crossbody bag">
 								</a>
 								<div class="product-card__large-description">
 									<a href="" class="product-card__large-title">Leather crossbody bag with gold hardware</a>
@@ -1086,7 +1100,7 @@
 								<div class="product-card__raiting rating-5"></div>
 								<div class="product-card__favorite"></div>
 								<a href="" class="product-card__large-picture">
-									<img class="product-card__large-img" src="img/products/product-11.jpg" alt="product-11">
+									<img class="product-card__large-img" src="img/products/product-11.jpg" alt="Woman jeans">
 								</a>
 								<div class="product-card__large-description">
 									<a href="" class="product-card__large-title">Skinny push-up jeans</a>
@@ -1102,7 +1116,7 @@
 								<div class="product-card__raiting rating-5"></div>
 								<div class="product-card__favorite"></div>
 								<a href="" class="product-card__large-picture">
-									<img class="product-card__large-img" src="img/products/product-12.jpg" alt="product-12">
+									<img class="product-card__large-img" src="img/products/product-12.jpg" alt="Ankle boots">
 								</a>
 								<div class="product-card__large-description">
 									<a href="" class="product-card__large-title">Wide heel suede ankle boots</a>
@@ -1118,7 +1132,7 @@
 								<div class="product-card__raiting rating-5"></div>
 								<div class="product-card__favorite"></div>
 								<a href="" class="product-card__large-picture">
-									<img class="product-card__large-img" src="img/products/product-10.jpg" alt="product-10">
+									<img class="product-card__large-img" src="img/products/product-10.jpg" alt="Leather crossbody bag">
 								</a>
 								<div class="product-card__large-description">
 									<a href="" class="product-card__large-title">Leather crossbody bag with gold hardware</a>
@@ -1134,7 +1148,7 @@
 								<div class="product-card__raiting rating-5"></div>
 								<div class="product-card__favorite"></div>
 								<a href="" class="product-card__large-picture">
-									<img class="product-card__large-img" src="img/products/product-11.jpg" alt="product-11">
+									<img class="product-card__large-img" src="img/products/product-11.jpg" alt="Woman jeans">
 								</a>
 								<div class="product-card__large-description">
 									<a href="" class="product-card__large-title">Skinny push-up jeans</a>
@@ -1153,7 +1167,9 @@
 			</section>
 			<section class="enjoy-block">
 				<div class="container enjoy-block__container">
-					<div class="enjoy-block__image"></div>
+					<div class="enjoy-block__image">
+						<img class="enjoy-block__image-img" src="img/bg/enjoy-block-bg.png" alt="Enjoy image background">
+					</div>
 					<div class="enjoy-block__content">
 						<h2 class="enjoy-block__title">Enjoy mobile shopping with our Createx Store App!</h2>
 						<div class="mobile-app">
@@ -1197,13 +1213,13 @@
 					</div>
 					<div class="instagram-block__preview">
 						<div class="instagram-block__preview-item">
-							<img class="instagram-block__preview-img" src="img/bg/instagram-preview-1.jpg" alt="instagram-preview">
+							<img class="instagram-block__preview-img" src="img/bg/instagram-preview-1.jpg" alt="Man in the t-shirt">
 						</div>
 						<div class="instagram-block__preview-item">
-							<img class="instagram-block__preview-img" src="img/bg/instagram-preview-2.jpg" alt="instagram-preview">
+							<img class="instagram-block__preview-img" src="img/bg/instagram-preview-2.jpg" alt="Sport shoes">
 						</div>
 						<div class="instagram-block__preview-item">
-							<img class="instagram-block__preview-img" src="img/bg/instagram-preview-3.jpg" alt="instagram-preview">
+							<img class="instagram-block__preview-img" src="img/bg/instagram-preview-3.jpg" alt="Child on the street">
 						</div>
 					</div>
 				</div>
@@ -1217,7 +1233,7 @@
 					<div class="fashion-blog__content">
 						<div class="fashion-blog__card">
 							<div class="fashion-blog__card-picture">
-								<img class="fashion-blog__card-img" src="img/bg/fashion-blog-img-1.jpg" alt="fashion-blog-img">
+								<img class="fashion-blog__card-img" src="img/bg/fashion-blog-img-1.jpg" alt="Bag trands image">
 							</div>
 							<div class="fashion-blog__card-description">
 								<a href="" class="fashion-blog__card-title">Bag Trends for Summer 2020</a>
@@ -1231,7 +1247,7 @@
 						</div>
 						<div class="fashion-blog__card">
 							<div class="fashion-blog__card-picture">
-								<img class="fashion-blog__card-img" src="img/bg/fashion-blog-img-2.jpg" alt="fashion-blog-img">
+								<img class="fashion-blog__card-img" src="img/bg/fashion-blog-img-2.jpg" alt="Hottest sneakers image">
 							</div>
 							<div class="fashion-blog__card-description">
 								<a href="" class="fashion-blog__card-title">Top 10 of This Season’s Hottest Sneakers</a>
@@ -1251,22 +1267,22 @@
 					<div class="marquee">
 				        <ul class="marquee__content">
 				           <li class="marquee__content-item">
-				           		<img class="marquee__content-img" src="img/bg/brand-logo-1.png" alt="brands-img">
+				           		<img class="marquee__content-img" src="img/bg/brand-logo-1.png" alt="In Depth Consulting logo">
 				           </li>
 				           <li class="marquee__content-item">
-				           		<img class="marquee__content-img" src="img/bg/brand-logo-2.png" alt="brands-img">
+				           		<img class="marquee__content-img" src="img/bg/brand-logo-2.png" alt="Higher Fit logo">
 				           </li>
 				           <li class="marquee__content-item">
-				           		<img class="marquee__content-img" src="img/bg/brand-logo-3.png" alt="brands-img">
+				           		<img class="marquee__content-img" src="img/bg/brand-logo-3.png" alt="Sentinal Consulting logo">
 				           </li>
 				           <li class="marquee__content-item">
-				           		<img class="marquee__content-img" src="img/bg/brand-logo-4.png" alt="brands-img">
+				           		<img class="marquee__content-img" src="img/bg/brand-logo-4.png" alt="National logo">
 				           </li>
 				           <li class="marquee__content-item">
-				           		<img class="marquee__content-img" src="img/bg/brand-logo-5.png" alt="brands-img">
+				           		<img class="marquee__content-img" src="img/bg/brand-logo-5.png" alt="For Sale logo">
 				           </li>
 				           <li class="marquee__content-item">
-				           		<img class="marquee__content-img" src="img/bg/brand-logo-6.png" alt="brands-img">
+				           		<img class="marquee__content-img" src="img/bg/brand-logo-6.png" alt="Del Mar Strategy logo">
 				           </li>
 				        </ul>
 				     </div>
@@ -1306,7 +1322,7 @@
 						</form>
 					</div>
 					<div class="subscribe__right">
-						<img class="subscribe__right-img" src="img/bg/subscribe-block-bg.png" alt="subscribe-img">
+						<img class="subscribe__right-img" src="img/bg/subscribe-block-bg.png" alt="Subscribe image background">
 					</div>
 				</div>
 			</section>
