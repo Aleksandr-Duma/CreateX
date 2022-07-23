@@ -1,0 +1,29 @@
+/*------------------products-----------------*/
+.products{
+
+	&__container{
+
+	}
+
+	&__body{
+		display: flex;
+	}
+
+	&__body-filters{
+
+	}
+
+	&__body-content{
+		// border: 1px solid blue;
+		display: flex;
+		justify-content: flex-start;
+		flex-wrap: wrap;
+		flex-grow: 1;
+		gap: 33px;
+		// padding-left: 5px;
+
+		.product-card{
+			margin: 0;
+		}
+	}
+} 

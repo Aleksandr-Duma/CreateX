@@ -1,0 +1,25 @@
+/*----------------products-head--------------*/
+.products-head{
+	padding: 32px 0 20px 0;
+
+	&__container{
+		display: flex;
+		align-items: center;
+	}
+
+	&__open-filters{
+		min-width: 255px;
+		font-weight: 700;
+		font-size: 14px;
+		text-align: left;
+		letter-spacing: 0.5px;
+		color: #fff;
+		border-radius: 4px;
+		background-color: var(--main-green);
+		background-image: url(../img/icons/button-filters-icon.svg);
+		background-repeat: no-repeat;
+		background-position: 78px center;
+		padding: 14px 78px 14px 103px;
+		margin-right: 60px;
+	}
+}

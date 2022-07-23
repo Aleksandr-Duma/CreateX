@@ -71,30 +71,34 @@ document.addEventListener('DOMContentLoaded', function() {
 			document.querySelector('.timer__content').textContent = 'Акция завершена!';
 		}
 
-		daysVal.textContent = days;
-		if (days < 10) {
-			daysVal.textContent = `0${days}`;
-		}
+		if (daysVal && hoursVal && minutesVal && secondsVal) {
+		
+			daysVal.textContent = days;
+			if (days < 10) {
+				daysVal.textContent = `0${days}`;
+			}
 
-		hoursVal.textContent = hours;
-		if (hours < 10) {
-			hoursVal.textContent = `0${hours}`;
-		}
+			hoursVal.textContent = hours;
+			if (hours < 10) {
+				hoursVal.textContent = `0${hours}`;
+			}
 
-		minutesVal.textContent = minutes;
-		if (minutes < 10) {
-			minutesVal.textContent = `0${minutes}`;
-		}
+			minutesVal.textContent = minutes;
+			if (minutes < 10) {
+				minutesVal.textContent = `0${minutes}`;
+			}
 
-		secondsVal.textContent = seconds;
-		if (seconds < 10) {
-			secondsVal.textContent = `0${seconds}`;
+			secondsVal.textContent = seconds;
+			if (seconds < 10) {
+				secondsVal.textContent = `0${seconds}`;
+			}
+
+			// функция склонения: по необходимости меняем на русский текст
+			daysText.textContent = declOfNum(days, ['Day', 'Days', 'Days']);	
+			hoursText.textContent = declOfNum(hours, ['Hour', 'Hours', 'Hours']);
+			minutesText.textContent = declOfNum(minutes, ['Min', 'Mins', 'Mins']);
+			secondsText.textContent = declOfNum(seconds, ['Sec', 'Sec', 'Sec']);
 		}
-		// функция склонения: по необходимости меняем на русский текст
-		daysText.textContent = declOfNum(days, ['Day', 'Days', 'Days']);	
-		hoursText.textContent = declOfNum(hours, ['Hour', 'Hours', 'Hours']);
-		minutesText.textContent = declOfNum(minutes, ['Min', 'Mins', 'Mins']);
-		secondsText.textContent = declOfNum(seconds, ['Sec', 'Sec', 'Sec']);
 	}
 
 	timeCount();
@@ -193,16 +197,68 @@ if (isMobile.any()){
 };
 
 /*------------------Marquee logo brands--------------------*/
-
 const root = document.documentElement;
 const marquieElementsDisplay = getComputedStyle(root).getPropertyValue('--marquee-elements-displayed');
 const marqueeContent = document.querySelector('.marquee__content');
 
-root.style.setProperty('--marquee-elements', marqueeContent.children.length);
+if (marqueeContent) {
+	root.style.setProperty('--marquee-elements', marqueeContent.children.length);
 
-for (let i = 0; i < marquieElementsDisplay; i++) {
-	marqueeContent.appendChild(marqueeContent.children[i].cloneNode(true));
+	for (let i = 0; i < marquieElementsDisplay; i++) {
+		marqueeContent.appendChild(marqueeContent.children[i].cloneNode(true));
+	};
 }
+
+/*---------------------Number-spinner----------------------*/
+
+const pageNumberSpinner = document.querySelectorAll('.number-spinner');
+	
+	if (pageNumberSpinner) {
+		pageNumberSpinner.forEach(item => {
+			numberSpinner(item);
+		});
+	}
+	
+function numberSpinner(param) {
+	const buttonPlus = param.querySelector('.number-spinner__button-plus');
+	const buttonMinus = param.querySelector('.number-spinner__button-minus');
+	const inputSpinner = param.querySelector('.number-spinner__input');
+
+	buttonPlus.addEventListener('click', () => {
+		let quantity = parseInt(inputSpinner.value) + 6;
+
+		if(quantity > 72) {
+			quantity = 72;
+		} 
+		inputSpinner.value = quantity;
+
+		return false;
+	});
+
+	buttonMinus.addEventListener('click', () => {
+		let quantity = parseInt(inputSpinner.value) - 6;
+
+		if(quantity < 6) {
+			quantity = 6;
+		}
+		inputSpinner.value = quantity;
+
+		return false;
+	});
+}
+
+/*---------------------product-filter----------------------*/
+
+const buttonOpenProductFilter = document.querySelectorAll('.products-head__open-filters');
+const productFilter = document.querySelectorAll('.product-filter');
+
+	buttonOpenProductFilter.forEach(button => {
+		button.addEventListener('click', () => {
+			productFilter.forEach(filter => {
+				filter.classList.toggle('show');
+			});
+		});
+	});
 
 
 $(function(){

@@ -1,0 +1,26 @@
+/*---------------product-filter--------------*/
+.product-filter{
+	min-width: 255px;
+	// border: 1px solid blue;
+	margin-right: 60px;
+	display: none;
+
+	&.show{
+		display: block;
+	}
+
+	&__item{
+		width: 100%;
+		&:not(:last-child){
+			border-bottom: 1px solid #E5E8ED;
+		}
+		padding: 15px 0px 15px 0px;
+	}
+
+	&__item-head{
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 1.6;
+		color: var(--main-black);
+	}
+}
