@@ -1,10 +1,11 @@
 /*-------------subscribe-category------------*/
 .subscribe-category{
 	display: flex;
-	margin-bottom: 36px;
+	flex-wrap: wrap;
+	margin-bottom: 25px;
 
 	@media (max-width: 990px){
-		margin-bottom: 25px;
+		margin-bottom: 15px;
 	}
 }
 
@@ -28,6 +29,7 @@
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 	transition: background .2s ease;
 	padding: 8px 16px 8px 14px;
+	margin-bottom: 10px;
 
 	@media (max-width: 990px){
 		font-size: 12px;

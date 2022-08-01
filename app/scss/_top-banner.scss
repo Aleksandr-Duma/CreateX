@@ -193,5 +193,10 @@
 
 	&__links-wrap{
 		display: flex;
+		flex-wrap: wrap;
+
+		.primary-link{
+			margin-bottom: 10px;
+		}
 	}
 }
